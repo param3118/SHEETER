@@ -2,7 +2,7 @@
 
 ![DSA Tracker Screenshot](https://i.ibb.co/6FwK4V9/DSA-Tracker-Screenshot.png)
 
-This is a personal, static web-based DSA (Data Structures and Algorithms) tracker built to manage and monitor progress on a comprehensive problem sheet. The tracker is inspired by the Archit Aggarwal DSA Sheet and is designed to be lightweight, fast, and completely client-side, with all data stored locally in your browser.
+This is a personal, static web-based DSA (Data Structures and Algorithms) tracker built to manage and monitor progress on a comprehensive problem sheet. The tracker is designed to be lightweight, fast, and completely client-side, with all data stored locally in your browser.
 
 ## 🚀 Live Demo
 You can access the live version of this tracker here:
