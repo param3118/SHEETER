@@ -1,0 +1,1403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trees - DSA Tracker</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container topic-details" data-topic="trees">
+        <header>
+            <div class="toolbar">
+                <a href="../index.html" class="back-button">← Back to Topics</a>
+                <div class="search-filter-group">
+                    <input type="text" id="searchInput" placeholder="Search questions...">
+                    <select id="statusFilter">
+                        <option value="all">All Statuses</option>
+                        <option value="not-started">Not Started</option>
+                        <option value="in-progress">In Progress</option>
+                        <option value="solved">Solved</option>
+                        <option value="review">Review</option>
+                    </select>
+                    <button id="exportBtn" class="action-button">Export Progress</button>
+                    <input type="file" id="importFile" accept=".json" style="display: none;">
+                    <button onclick="document.getElementById('importFile').click()" class="action-button">Import Progress</button>
+                </div>
+            </div>
+            <h1>Trees</h1>
+            <h3 id="progress-header">Progress: 0 / 100</h3>
+        </header>
+
+        <section>
+            <div class="accordion-item">
+                <div class="accordion-header active">
+                    Depth First Search (7 subtopics, 35 problems) <span class="arrow">></span>
+                </div>
+                <div class="accordion-content active">
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            Basics of DFS (11 problems) <span class="arrow">></span>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="question-item" data-id="constructor-binary-tree">
+                                <a href="https://www.pepcoding.com/resources/online-java-foundation/binary-tree/binary_tree_constructor/topic" target="_blank" class="question-link">Constructor - Binary Tree</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="tree-properties">
+                                <a href="https://drive.google.com/file/d/1A3Qiyb7MRryTErL5r1KtnxxLzPjOyTME/view" target="_blank" class="question-link">Tree Properties</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="size-binary-tree">
+                                <a href="https://practice.geeksforgeeks.org/problems/size-of-binary-tree/1" target="_blank" class="question-link">Size - Binary Tree</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="max-min-binary-tree">
+                                <a href="https://practice.geeksforgeeks.org/problems/max-and-min-element-in-binary-tree/1" target="_blank" class="question-link">Max & Min - Binary Tree</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="preorder-traversal-binary-tree">
+                                <a href="https://leetcode.com/problems/binary-tree-preorder-traversal/" target="_blank" class="question-link">Preorder Traversal - Binary Tree</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="inorder-traversal-binary-tree">
+                                <a href="https://leetcode.com/problems/binary-tree-inorder-traversal/" target="_blank" class="question-link">Inorder Traversal - Binary Tree</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="postorder-traversal-binary-tree">
+                                <a href="https://leetcode.com/problems/binary-tree-postorder-traversal/" target="_blank" class="question-link">Postorder Traversal - Binary Tree</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="recursive-dfs-traversals">
+                                <a href="https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/" target="_blank" class="question-link">Recursive DFS Traversals</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="iterative-dfs-traverals">
+                                <a href="https://www.pepcoding.com/resources/online-java-foundation/binary-tree/iterative-pre-post-in-binary-tree-official/ojquestion" target="_blank" class="question-link">Iterative DFS Traverals</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="searching-in-binary-tree">
+                                <a href="https://www.geeksforgeeks.org/search-a-node-in-binary-tree/" target="_blank" class="question-link">Searching in Binary Tree</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="preorder-predecessor">
+                                <a href="https://www.geeksforgeeks.org/preorder-predecessor-node-binary-tree/" target="_blank" class="question-link">Preorder Predecessor</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            Depth and Width (6 problems) <span class="arrow">></span>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="question-item" data-id="max-depth-of-binary-tree">
+                                <a href="https://leetcode.com/problems/maximum-depth-of-binary-tree/" target="_blank" class="question-link">Max Depth of Binary Tree</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="min-depth-of-binary-tree">
+                                <a href="https://leetcode.com/problems/minimum-depth-of-binary-tree/" target="_blank" class="question-link">Min Depth of Binary Tree</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="is-binary-tree-balanced">
+                                <a href="https://leetcode.com/problems/balanced-binary-tree/" target="_blank" class="question-link">Is Binary Tree Balanced</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="diameter-of-binary-tree">
+                                <a href="https://leetcode.com/problems/diameter-of-binary-tree/" target="_blank" class="question-link">Diameter of Binary Tree</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="max-width-of-binary-tree-i">
+                                <a href="https://practice.geeksforgeeks.org/problems/maximum-width-of-tree/1" target="_blank" class="question-link">Max Width of Binary Tree - I</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="max-width-of-binary-tree-ii">
+                                <a href="https://leetcode.com/problems/maximum-width-of-binary-tree/" target="_blank" class="question-link">Max Width of Binary Tree - II</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="vertical-width-or-shadow">
+                                <a href="https://practice.geeksforgeeks.org/problems/vertical-width-of-a-binary-tree/1" target="_blank" class="question-link">Vertical Width or Shadow</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            Node Paths Problems (7 problems) <span class="arrow">></span>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="question-item" data-id="ancestors-in-binary-tree">
+                                <a href="https://practice.geeksforgeeks.org/problems/ancestors-in-binary-tree/1" target="_blank" class="question-link">Ancestors in Binary Tree</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="max-node-ancestor-difference">
+                                <a href="https://practice.geeksforgeeks.org/problems/maximum-difference-between-node-and-its-ancestor/1" target="_blank" class="question-link">Max Node Ancestor Difference</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="count-turns-in-n2n-path">
+                                <a href="https://practice.geeksforgeeks.org/problems/number-of-turns-in-binary-tree/1" target="_blank" class="question-link">Count Turns in N2N Path</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="all-root-to-leaf-tree-paths">
+                                <a href="https://leetcode.com/problems/binary-tree-paths/" target="_blank" class="question-link">All Root to Leaf Tree Paths</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="sum-of-root-to-leaf-paths">
+                                <a href="https://leetcode.com/problems/sum-root-to-leaf-numbers/" target="_blank" class="question-link">Sum of Root to Leaf Paths</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="linearize-binary-tree">
+                                <a href="https://leetcode.com/problems/flatten-binary-tree-to-linked-list/" target="_blank" class="question-link">Linearize Binary Tree</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="linked-list-in-binary-tree">
+                                <a href="https://leetcode.com/problems/linked-list-in-binary-tree/" target="_blank" class="question-link">Linked List in Binary Tree</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="count-good-nodes">
+                                <a href="https://leetcode.com/problems/count-good-nodes-in-binary-tree/" target="_blank" class="question-link">Count Good Nodes</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            Subtree Sum Problems (5 problems) <span class="arrow">></span>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="question-item" data-id="maximum-sum-subtree">
+                                <a href="https://www.codingninjas.com/codestudio/problems/largest-sub-tree-sum_920400" target="_blank" class="question-link">Maximum Sum Subtree</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="tilt-of-binary-tree">
+                                <a href="https://leetcode.com/problems/binary-tree-tilt/" target="_blank" class="question-link">Tilt of Binary Tree</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="target-sum-subtrees">
+                                <a href="https://practice.geeksforgeeks.org/problems/count-number-of-subtrees-having-given-sum/1" target="_blank" class="question-link">Target Sum Subtrees</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="transform-to-sum-tree">
+                                <a href="https://practice.geeksforgeeks.org/problems/transform-to-sum-tree/1" target="_blank" class="question-link">Transform to Sum Tree</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="check-sum-tree">
+                                <a href="https://practice.geeksforgeeks.org/problems/sum-tree/1" target="_blank" class="question-link">Check Sum Tree</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            Path Sum Problems (6 problems) <span class="arrow">></span>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="question-item" data-id="has-root-to-leaf-path-sum">
+                                <a href="https://leetcode.com/problems/path-sum/" target="_blank" class="question-link">Has Root to Leaf Path Sum</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="all-root-to-leaf-path-sum">
+                                <a href="https://leetcode.com/problems/path-sum-ii/" target="_blank" class="question-link">All Root to Leaf Path Sum</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="longest-root-to-leaf-path-sum">
+                                <a href="https://practice.geeksforgeeks.org/problems/sum-of-the-longest-bloodline-of-a-tree/1" target="_blank" class="question-link">Longest Root to Leaf Path Sum</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="node-to-descendant-path-sum">
+                                <a href="https://leetcode.com/problems/path-sum-iii/" target="_blank" class="question-link">Node to Descendant Path Sum</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="max-leaf-to-leaf-path-sum">
+                                <a href="https://www.codingninjas.com/codestudio/problems/maximum-path-sum-between-two-leaves_794950" target="_blank" class="question-link">Max Leaf to Leaf Path Sum</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="max-node-to-node-path-sum">
+                                <a href="https://leetcode.com/problems/binary-tree-maximum-path-sum/" target="_blank" class="question-link">Max Node to Node Path Sum</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="longest-univalue-path">
+                                <a href="https://leetcode.com/problems/longest-univalue-path/" target="_blank" class="question-link">Longest Univalue Path</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            K Distance Nodes (3 problems) <span class="arrow">></span>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="question-item" data-id="nodes-k-level-down">
+                                <a href="https://practice.geeksforgeeks.org/problems/k-distance-from-root/1" target="_blank" class="question-link">Nodes K Level Down</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="nodes-at-k-distance">
+                                <a href="https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/" target="_blank" class="question-link">Nodes At K Distance</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="burning-tree">
+                                <a href="https://leetcode.com/problems/amount-of-time-for-binary-tree-to-be-infected/" target="_blank" class="question-link">Burning Tree</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            Modify Binary Tree (6 problems) <span class="arrow">></span>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="question-item" data-id="delete-single-child-parents">
+                                <a href="https://practice.geeksforgeeks.org/problems/remove-half-nodes/1" target="_blank" class="question-link">Delete Single Child Parents</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="merge-two-binary-trees">
+                                <a href="https://leetcode.com/problems/merge-two-binary-trees/" target="_blank" class="question-link">Merge Two Binary Trees</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="delete-target-leaf-nodes">
+                                <a href="https://leetcode.com/problems/delete-leaves-with-a-given-value/" target="_blank" class="question-link">Delete Target Leaf Nodes</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="delete-insufficient-nodes">
+                                <a href="https://leetcode.com/problems/insufficient-nodes-in-root-to-leaf-paths/" target="_blank" class="question-link">Delete Insufficient Nodes</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="delete-nodes-return-forest">
+                                <a href="https://leetcode.com/problems/delete-nodes-and-return-forest/" target="_blank" class="question-link">Delete Nodes & Return Forest</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="add-one-row-to-tree">
+                                <a href="https://leetcode.com/problems/add-one-row-to-tree/" target="_blank" class="question-link">Add One Row to Tree</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="follow-children-sum-property">
+                                <a href="https://www.codingninjas.com/codestudio/problems/childrensumproperty_790723" target="_blank" class="question-link"> Follow Children Sum Property</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            Compare Trees (8 problems) <span class="arrow">></span>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="question-item" data-id="identical-or-same-trees">
+                                <a href="https://leetcode.com/problems/same-tree/" target="_blank" class="question-link">Identical or Same Trees</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="foldable-binary-tree">
+                                <a href="https://practice.geeksforgeeks.org/problems/foldable-binary-tree/1" target="_blank" class="question-link">Foldable Binary Tree</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="isomorphic-binary-tree">
+                                <a href="https://practice.geeksforgeeks.org/problems/check-if-tree-is-isomorphic/1" target="_blank" class="question-link">Isomorphic Binary Tree</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="symmetric-or-mirror-tree">
+                                <a href="https://leetcode.com/problems/symmetric-tree/" target="_blank" class="question-link">Symmetric or Mirror Tree</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="invert-binary-tree">
+                                <a href="https://leetcode.com/problems/invert-binary-tree/" target="_blank" class="question-link">Invert Binary Tree</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="find-cloned-tree-node">
+                                <a href="https://leetcode.com/problems/find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree/" target="_blank" class="question-link">Find Cloned Tree Node</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="image-multiplication">
+                                <a href="https://practice.geeksforgeeks.org/problems/image-multiplication0627/1" target="_blank" class="question-link">Image Multiplication</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="duplicate-subtree-i">
+                                <a href="https://leetcode.com/problems/subtree-of-another-tree/" target="_blank" class="question-link">Duplicate Subtree - I</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="duplicate-subtree-ii">
+                                <a href="https://leetcode.com/problems/find-duplicate-subtrees/" target="_blank" class="question-link">Duplicate Subtree - II</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            Complete Binary Tree (3 problems) <span class="arrow">></span>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="question-item" data-id="count-complete-tree-nodes">
+                                <a href="https://leetcode.com/problems/count-complete-tree-nodes/" target="_blank" class="question-link">Count Complete Tree Nodes</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="is-binary-tree-complete">
+                                <a href="https://leetcode.com/problems/check-completeness-of-a-binary-tree/" target="_blank" class="question-link">Is Binary Tree Complete</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="design-complete-tree">
+                                <a href="https://leetcode.com/problems/complete-binary-tree-inserter/" target="_blank" class="question-link">Design Complete Tree</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            More DFS Problems (7 problems) <span class="arrow">></span>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="question-item" data-id="splitted-tree-max-edge-score">
+                                <a href="https://leetcode.com/problems/maximum-product-of-splitted-binary-tree/" target="_blank" class="question-link">Splitted Tree Max Edge Score</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="splitted-tree-max-node-score">
+                                <a href="https://leetcode.com/problems/count-nodes-with-the-highest-score/" target="_blank" class="question-link">Splitted Tree Max Node Score</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="holiday-accomodation">
+                                <a href="https://www.spoj.com/problems/HOLI/" target="_blank" class="question-link">Holiday Accomodation</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="print-single-child-nodes">
+                                <a href="https://practice.geeksforgeeks.org/problems/print-all-nodes-that-dont-have-sibling/1" target="_blank" class="question-link">Print Single Child Nodes</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="tree-coloring-game">
+                                <a href="https://leetcode.com/problems/binary-tree-coloring-game/" target="_blank" class="question-link">Tree Coloring Game</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="2nd-min-in-special-tree">
+                                <a href="https://leetcode.com/problems/second-minimum-node-in-a-binary-tree/" target="_blank" class="question-link">2nd Min in Special Tree</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="path-in-zigzag-labelled-tree">
+                                <a href="https://leetcode.com/problems/path-in-zigzag-labelled-binary-tree/" target="_blank" class="question-link">Path in ZigZag Labelled Tree</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    Breadth First Search (10 problems) <span class="arrow">></span>
+                </div>
+                <div class="accordion-content">
+                    <div class="question-item" data-id="level-order-of-binary-tree">
+                        <a href="https://practice.geeksforgeeks.org/problems/level-order-traversal/1" target="_blank" class="question-link">Level Order of Binary Tree</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="level-order-linewise">
+                        <a href="https://leetcode.com/problems/binary-tree-level-order-traversal/" target="_blank" class="question-link">Level Order Linewise</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="reverse-levelorder">
+                        <a href="https://leetcode.com/problems/binary-tree-level-order-traversal-ii/" target="_blank" class="question-link">Reverse Levelorder</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="zigzag-levelorder">
+                        <a href="https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/" target="_blank" class="question-link">Zigzag Levelorder</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="alternate-levelorder">
+                        <a href="https://www.geeksforgeeks.org/perfect-binary-tree-specific-level-order-traversal/" target="_blank" class="question-link">Alternate Levelorder</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="cousins-in-binary-tree">
+                        <a href="https://leetcode.com/problems/cousins-in-binary-tree/" target="_blank" class="question-link">Cousins in Binary Tree</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="maximum-level-sum">
+                        <a href="https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/" target="_blank" class="question-link">Maximum Level Sum</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="average-levelorder">
+                        <a href="https://leetcode.com/problems/average-of-levels-in-binary-tree/" target="_blank" class="question-link">Average Levelorder</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="are-leaves-at-same-level">
+                        <a href="https://practice.geeksforgeeks.org/problems/leaf-at-same-level/1" target="_blank" class="question-link">Are Leaves at Same Level</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="populate-right-pointer-i">
+                        <a href="https://leetcode.com/problems/populating-next-right-pointers-in-each-node/" target="_blank" class="question-link">Populate Right Pointer - I</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="populate-right-pointer-ii">
+                        <a href="https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/" target="_blank" class="question-link">Populate Right Pointer - II</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="even-odd-tree">
+                        <a href="https://leetcode.com/problems/even-odd-tree/" target="_blank" class="question-link">Even Odd Tree</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    Other Tree Traversals (4 subtopics, 14 problems) <span class="arrow">></span>
+                </div>
+                <div class="accordion-content">
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            Diagnol Order (3 problems) <span class="arrow">></span>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="question-item" data-id="diagonal-order-i">
+                                <a href="https://practice.geeksforgeeks.org/problems/diagonal-traversal-of-binary-tree/1" target="_blank" class="question-link">Diagonal Order - I</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="diagonal-order-ii">
+                                <a href="https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/trees/diagonal-order-(anti-clock-wise)-of-a-binarytree/ojquestion" target="_blank" class="question-link">Diagonal Order - II</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="diagonal-sum">
+                                <a href="https://practice.geeksforgeeks.org/problems/diagonal-sum-in-binary-tree/1" target="_blank" class="question-link">Diagonal Sum</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            Vertical Order (3 problems) <span class="arrow">></span>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="question-item" data-id="vertical-order-i">
+                                <a href="https://practice.geeksforgeeks.org/problems/print-a-binary-tree-in-vertical-order/1" target="_blank" class="question-link">Vertical Order - I</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="vertical-order-ii">
+                                <a href="https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree/" target="_blank" class="question-link">Vertical Order - II</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="vertical-order-sum">
+                                <a href="https://practice.geeksforgeeks.org/problems/vertical-sum/1" target="_blank" class="question-link">Vertical Order Sum</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            View of Tree (5 problems) <span class="arrow">></span>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="question-item" data-id="left-view-of-binary-tree">
+                                <a href="https://practice.geeksforgeeks.org/problems/left-view-of-binary-tree/1" target="_blank" class="question-link">Left View of Binary Tree</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="right-view-of-binary-tree">
+                                <a href="https://leetcode.com/problems/binary-tree-right-side-view/" target="_blank" class="question-link">Right View of Binary Tree</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="top-view-of-binary-tree">
+                                <a href="https://practice.geeksforgeeks.org/problems/top-view-of-binary-tree/1" target="_blank" class="question-link">Top View of Binary Tree</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="bottom-view-of-binary-tree">
+                                <a href="https://practice.geeksforgeeks.org/problems/bottom-view-of-binary-tree/1" target="_blank" class="question-link">Bottom View of Binary Tree</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="boundary-traversal-of-tree">
+                                <a href="https://practice.geeksforgeeks.org/problems/boundary-traversal-of-binary-tree/1" target="_blank" class="question-link">Boundary Traversal of Tree</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            Morris Traversal (5 problems) <span class="arrow">></span>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="question-item" data-id="threaded-binary-tree">
+                                <a href="https://www.scaler.com/topics/threaded-binary-tree/" target="_blank" class="question-link">Threaded Binary Tree</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="convert-tree-to-threaded-i">
+                                <a href="https://www.geeksforgeeks.org/convert-binary-tree-threaded-binary-tree-2/" target="_blank" class="question-link">Convert Tree to Threaded - I</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="convert-tree-to-threaded-ii">
+                                <a href="https://www.geeksforgeeks.org/convert-binary-tree-threaded-binary-tree-set-2-efficient/" target="_blank" class="question-link">Convert Tree to Threaded - II</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="morris-inorder-traversal">
+                                <a href="https://www.geeksforgeeks.org/inorder-tree-traversal-without-recursion-and-without-stack/" target="_blank" class="question-link">Morris Inorder Traversal</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="morris-preorder-traversal">
+                                <a href="https://www.geeksforgeeks.org/morris-traversal-for-preorder/" target="_blank" class="question-link">Morris Preorder Traversal</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="morris-postorder-traversal">
+                                <a href="https://www.geeksforgeeks.org/postorder-traversal-binary-tree-without-recursion-without-stack/" target="_blank" class="question-link">Morris Postorder Traversal</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    Construct Binary Tree (12 problems) <span class="arrow">></span>
+                </div>
+                <div class="accordion-content">
+                    <div class="question-item" data-id="serialize-deserialize-binary-tree">
+                        <a href="https://leetcode.com/problems/serialize-and-deserialize-binary-tree/" target="_blank" class="question-link">Serialize & Deserialize Binary Tree</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="verify-preorder-serialization">
+                        <a href="https://leetcode.com/problems/verify-preorder-serialization-of-a-binary-tree/" target="_blank" class="question-link">Verify Preorder Serialization</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="tree-from-preorder-inorder">
+                        <a href="https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/" target="_blank" class="question-link">Tree from Preorder & Inorder</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="tree-from-postorder-inorder">
+                        <a href="https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/" target="_blank" class="question-link">Tree from Postorder & Inorder</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="tree-from-preorder-postorder">
+                        <a href="https://leetcode.com/problems/construct-binary-tree-from-preorder-and-postorder-traversal/" target="_blank" class="question-link">Tree from Preorder & Postorder</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="tree-from-levelorder-inorder">
+                        <a href="https://practice.geeksforgeeks.org/problems/construct-tree-from-inorder-and-levelorder/1" target="_blank" class="question-link">Tree from Levelorder & Inorder</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="clone-binary-tree">
+                        <a href="https://practice.geeksforgeeks.org/problems/clone-a-binary-tree/1" target="_blank" class="question-link">Clone Binary Tree</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="binary-tree-from-parent-array">
+                        <a href="https://practice.geeksforgeeks.org/problems/construct-binary-tree-from-parent-array/1" target="_blank" class="question-link">Binary Tree from Parent Array</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="bracket-string-from-binary-tree">
+                        <a href="https://leetcode.com/problems/construct-string-from-binary-tree/" target="_blank" class="question-link">Bracket String from Binary Tree</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="binary-tree-from-bracket-string">
+                        <a href="https://www.codingninjas.com/codestudio/problems/binary-tree-from-bracket_1118117" target="_blank" class="question-link">Binary Tree from Bracket String</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="ternary-expression-to-binary-tree">
+                        <a href="https://www.codingninjas.com/codestudio/problems/ternarytotree_1102306" target="_blank" class="question-link">Ternary Expression to Binary Tree</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="heap-ordered-binary-tree">
+                        <a href="https://www.interviewbit.com/problems/inorder-traversal-of-cartesian-tree/" target="_blank" class="question-link">Heap Ordered Binary Tree</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    Lowest Common Ancestor (3 subtopics, 10 problems) <span class="arrow">></span>
+                </div>
+                <div class="accordion-content">
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            LCA Variations (6 problems) <span class="arrow">></span>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="question-item" data-id="lca-binary-tree">
+                                <a href="https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/" target="_blank" class="question-link">LCA - Binary Tree</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="lca-deepest-leaves">
+                                <a href="https://leetcode.com/problems/lowest-common-ancestor-of-deepest-leaves/" target="_blank" class="question-link">LCA - Deepest Leaves</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="lca-parent-pointers">
+                                <a href="https://www.codingninjas.com/codestudio/problems/lowest-common-ancestor-of-a-binary-tree-iii_1280134" target="_blank" class="question-link">LCA - Parent Pointers</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="lca-3-nodes">
+                                <a href="https://www.codingninjas.com/codestudio/problems/lca-of-three-nodes_794944" target="_blank" class="question-link">LCA - 3 Nodes</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="lca-k-nodes">
+                                <a href="https://www.geeksforgeeks.org/least-common-ancestor-of-any-number-of-nodes-in-binary-tree/" target="_blank" class="question-link">LCA - K Nodes</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="shortest-distance-of-2-nodes">
+                                <a href="https://practice.geeksforgeeks.org/problems/min-distance-between-two-given-nodes-of-a-binary-tree/1" target="_blank" class="question-link">Shortest Distance of 2 Nodes</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            Sparse Table (4 problems) <span class="arrow">></span>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="question-item" data-id="sparse-table-cp-algorithms">
+                                <a href="https://cp-algorithms.com/data_structures/sparse-table.html" target="_blank" class="question-link">Sparse Table</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="sparse-table-youtube-42">
+                                <a href="https://www.youtube.com/watch?v=0jWeUdxrGm4" target="_blank" class="question-link">Sparse Table</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="lca-using-sparse-table-cp">
+                                <a href="https://cp-algorithms.com/graph/lca.html" target="_blank" class="question-link">LCA - Using Sparse Table</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="lca-using-sparse-table-youtube-43">
+                                <a href="https://www.youtube.com/playlist?list=PLTAWODwDBzMxMhXD2jkU-2IZvKDvmB0-H" target="_blank" class="question-link">LCA - Using Sparse Table</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            Binary Lifting (7 problems) <span class="arrow">></span>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="question-item" data-id="binary-lifting-kth-ancestor-leetcode">
+                                <a href="https://leetcode.com/problems/kth-ancestor-of-a-tree-node/" target="_blank" class="question-link">Binary Lifting - Kth Ancestor</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="binary-lifting-kth-ancestor-youtube">
+                                <a href="https://www.youtube.com/watch?v=FAfSArGC8KY" target="_blank" class="question-link">Binary Lifting - Kth Ancestor</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="lca-using-binary-lifting-cp">
+                                <a href="https://cp-algorithms.com/graph/lca_binary_lifting.html" target="_blank" class="question-link">LCA - Using Binary Lifting</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="lca-using-binary-lifting-youtube-45">
+                                <a href="https://www.youtube.com/watch?v=qPxS_rY0OJw" target="_blank" class="question-link">LCA - Using Binary Lifting - I</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="lca-using-binary-lifting-youtube-46">
+                                <a href="https://www.youtube.com/watch?v=s9zZOVsF_eo" target="_blank" class="question-link">LCA - Using Binary Lifting - II</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="distance-queries-cses">
+                                <a href="https://cses.fi/problemset/task/1135" target="_blank" class="question-link">Distance Queries</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="lca-sparse-matrix">
+                                <a href="https://www.scaler.com/topics/data-structures/sparse-matrix-in-data-structure/" target="_blank" class="question-link">LCA - Sparse Matrix</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    Rerooting Technique (11 problems) <span class="arrow">></span>
+                </div>
+                <div class="accordion-content">
+                    <div class="question-item" data-id="dp-on-trees-codeforces">
+                        <a href="https://codeforces.com/blog/entry/79857" target="_blank" class="question-link">DP on Trees</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="subordinates-cses">
+                        <a href="https://cses.fi/problemset/task/1674" target="_blank" class="question-link">Subordinates</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="tree-matching-cses">
+                        <a href="https://cses.fi/problemset/task/1130" target="_blank" class="question-link">Tree Matching</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="tree-distances-i">
+                        <a href="https://cses.fi/problemset/task/1132" target="_blank" class="question-link">Tree Distances - I</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="tree-distances-ii">
+                        <a href="https://leetcode.com/problems/sum-of-distances-in-tree/" target="_blank" class="question-link">Tree Distances - II</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="house-robber-tree">
+                        <a href="https://leetcode.com/problems/house-robber-iii/" target="_blank" class="question-link">House Robber - Tree</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="largest-independent-set">
+                        <a href="https://practice.geeksforgeeks.org/problems/largest-independent-set-problem/0" target="_blank" class="question-link">Largest Independent Set</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="vertex-cover-tree">
+                        <a href="https://www.geeksforgeeks.org/vertex-cover-problem-set-2-dynamic-programming-solution-tree/" target="_blank" class="question-link">Vertex Cover Tree</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="longest-zigzag-path">
+                        <a href="https://leetcode.com/problems/longest-zigzag-path-in-a-binary-tree/" target="_blank" class="question-link">Longest ZigZag Path</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="binary-tree-cameras">
+                        <a href="https://leetcode.com/problems/binary-tree-cameras/" target="_blank" class="question-link">Binary Tree Cameras</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="distribute-coins">
+                        <a href="https://leetcode.com/problems/distribute-coins-in-binary-tree/" target="_blank" class="question-link">Distribute Coins</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="min-time-to-collect-apples">
+                        <a href="https://leetcode.com/problems/minimum-time-to-collect-all-apples-in-a-tree/" target="_blank" class="question-link">Min Time to Collect Apples</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    N Ary or Generic Tree (11 problems) <span class="arrow">></span>
+                </div>
+                <div class="accordion-content">
+                    <div class="question-item" data-id="n-ary-tree-theory">
+                        <a href="https://www.geeksforgeeks.org/generic-treesn-array-trees/" target="_blank" class="question-link">N Ary Tree Theory</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="n-ary-tree-problems">
+                        <a href="https://www.pepcoding.com/resources/online-java-foundation/generic-tree/" target="_blank" class="question-link">N Ary Tree Problems</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="preorder-dfs-nary">
+                        <a href="https://leetcode.com/problems/n-ary-tree-preorder-traversal/" target="_blank" class="question-link">Preorder DFS - Nary </a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="postorder-dfs-nary">
+                        <a href="https://leetcode.com/problems/n-ary-tree-postorder-traversal/" target="_blank" class="question-link">Postorder DFS - Nary</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="height-of-nary-tree">
+                        <a href="https://leetcode.com/problems/maximum-depth-of-n-ary-tree/" target="_blank" class="question-link">Height of Nary Tree</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="diameter-of-nary-tree">
+                        <a href="https://www.interviewbit.com/problems/largest-distance-between-nodes-of-a-tree/" target="_blank" class="question-link">Diameter of Nary Tree</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="mirror-of-nary-tree">
+                        <a href="https://practice.geeksforgeeks.org/problems/check-mirror-in-n-ary-tree1528/1" target="_blank" class="question-link">Mirror of Nary Tree</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="levelorder-bfs-nary">
+                        <a href="https://leetcode.com/problems/n-ary-tree-level-order-traversal/" target="_blank" class="question-link">Levelorder BFS - Nary</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="nary-to-binary-tree">
+                        <a href="https://www.codingninjas.com/codestudio/problems/encode-n-ary-tree-to-binary-tree_1281859" target="_blank" class="question-link">Nary to Binary Tree</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="serialize-deserialize-nary">
+                        <a href="https://www.codingninjas.com/codestudio/problems/serialize-and-deserialize-an-n-ary-tree_1376416" target="_blank" class="question-link">Serialize Deserialize NAry</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="lockable-tree-leetcode">
+                        <a href="https://leetcode.com/problems/operations-on-tree/" target="_blank" class="question-link">Lockable Tree</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="lockable-tree-gfg">
+                        <a href="https://www.geeksforgeeks.org/locking-and-unlocking-of-resources-in-the-form-of-n-ary-tree/" target="_blank" class="question-link">Lockable Tree</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    Binary Search Tree (4 subtopics, 23 problems) <span class="arrow">></span>
+                </div>
+                <div class="accordion-content">
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            BST Basics (8 problems) <span class="arrow">></span>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="question-item" data-id="binary-search-tree-theory">
+                                <a href="https://www.scaler.com/topics/data-structures/binary-search-tree/" target="_blank" class="question-link">Binary Search Tree Theory</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="insertion-in-bst">
+                                <a href="https://leetcode.com/problems/insert-into-a-binary-search-tree/" target="_blank" class="question-link">Insertion in BST</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="deletion-in-bst">
+                                <a href="https://leetcode.com/problems/delete-node-in-a-bst/" target="_blank" class="question-link">Deletion in BST</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="searching-in-bst">
+                                <a href="https://leetcode.com/problems/search-in-a-binary-search-tree/" target="_blank" class="question-link">Searching in BST</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="minimum-node-in-bst">
+                                <a href="https://practice.geeksforgeeks.org/problems/minimum-element-in-bst/1" target="_blank" class="question-link">Minimum Node in BST</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="maximum-node-in-bst">
+                                <a href="https://www.geeksforgeeks.org/find-the-node-with-maximum-value-in-a-binary-search-tree/" target="_blank" class="question-link">Maximum Node in BST</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="handle-duplicates-in-bst">
+                                <a href="https://www.geeksforgeeks.org/how-to-handle-duplicates-in-binary-search-tree/" target="_blank" class="question-link">Handle Duplicates in BST</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="lca-in-bst">
+                                <a href="https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/" target="_blank" class="question-link">LCA in BST</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            Inorder Traversal (7 problems) <span class="arrow">></span>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="question-item" data-id="inorder-pred-successor-in-bst">
+                                <a href="https://practice.geeksforgeeks.org/problems/predecessor-and-successor/1" target="_blank" class="question-link">Inorder Pred/Successor in BST</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="inorder-successor-in-bst">
+                                <a href="https://www.geeksforgeeks.org/inorder-successor-in-binary-search-tree/" target="_blank" class="question-link">Inorder Successor in BST</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="kth-smallest-element-in-bst">
+                                <a href="https://leetcode.com/problems/kth-smallest-element-in-a-bst/" target="_blank" class="question-link">Kth Smallest Element in BST</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="kth-largest-element-in-bst">
+                                <a href="https://practice.geeksforgeeks.org/problems/kth-largest-element-in-bst/1" target="_blank" class="question-link">Kth Largest Element in BST</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="greater-sum-tree-from-bst">
+                                <a href="https://leetcode.com/problems/binary-search-tree-to-greater-sum-tree/" target="_blank" class="question-link">Greater Sum Tree from BST</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="min-difference-in-bst">
+                                <a href="https://leetcode.com/problems/minimum-absolute-difference-in-bst/" target="_blank" class="question-link">Min Difference in BST</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="mode-in-bst">
+                                <a href="https://leetcode.com/problems/find-mode-in-binary-search-tree/" target="_blank" class="question-link">Mode in BST</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            Range Problems (9 problems) <span class="arrow">></span>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="question-item" data-id="print-nodes-in-range">
+                                <a href="https://practice.geeksforgeeks.org/problems/print-bst-elements-in-given-range/1" target="_blank" class="question-link">Print Nodes in Range</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="count-nodes-in-range">
+                                <a href="https://practice.geeksforgeeks.org/problems/count-bst-nodes-that-lie-in-a-given-range/1" target="_blank" class="question-link">Count Nodes in Range</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="range-sum-of-bst">
+                                <a href="https://leetcode.com/problems/range-sum-of-bst/" target="_blank" class="question-link">Range Sum of BST</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="trim-bst">
+                                <a href="https://leetcode.com/problems/trim-a-binary-search-tree/" target="_blank" class="question-link">Trim BST</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="ceil-element-in-bst">
+                                <a href="https://practice.geeksforgeeks.org/problems/implementing-ceil-in-bst/1" target="_blank" class="question-link">Ceil Element in BST</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="floor-element-in-bst">
+                                <a href="https://www.codingninjas.com/codestudio/problems/floor-from-bst_920457" target="_blank" class="question-link">Floor Element in BST</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="closest-element-in-bst">
+                                <a href="https://practice.geeksforgeeks.org/problems/find-the-closest-element-in-bst/1" target="_blank" class="question-link">Closest Element in BST</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="k-closest-elements-in-bst">
+                                <a href="https://www.codingninjas.com/codestudio/problems/k-closest-values_1281852" target="_blank" class="question-link">K Closest Elements in BST</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="split-bst">
+                                <a href="https://www.codingninjas.com/codestudio/problems/split-bst_1376434" target="_blank" class="question-link">Split BST</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            Construct BST (11 problems) <span class="arrow">></span>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="question-item" data-id="construct-bst-from-inorder">
+                                <a href="https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/" target="_blank" class="question-link">Construct BST From Inorder</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="construct-bst-from-preorder">
+                                <a href="https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/" target="_blank" class="question-link">Construct BST From Preorder</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="construct-bst-from-postorder">
+                                <a href="https://practice.geeksforgeeks.org/problems/construct-bst-from-post-order/1" target="_blank" class="question-link">Construct BST From Postorder</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="construct-bst-from-levelorder">
+                                <a href="https://practice.geeksforgeeks.org/problems/convert-level-order-traversal-to-bst/1" target="_blank" class="question-link">Construct BST From Levelorder</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="convert-sorted-sll-to-bst">
+                                <a href="https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/" target="_blank" class="question-link">Convert Sorted SLL to BST</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="convert-bst-to-sorted-sll">
+                                <a href="https://leetcode.com/problems/increasing-order-search-tree/" target="_blank" class="question-link">Convert BST to Sorted SLL</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="convert-bst-to-sorted-dll">
+                                <a href="https://practice.geeksforgeeks.org/problems/binary-tree-to-dll/1" target="_blank" class="question-link">Convert BST To Sorted DLL</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="convert-bst-to-sorted-cdll">
+                                <a href="https://practice.geeksforgeeks.org/problems/binary-tree-to-cdll/1" target="_blank" class="question-link">Convert BST To Sorted CDLL</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="convert-sorted-dll-to-bst-pepcoding">
+                                <a href="https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/trees/convert-sorted-dll-to-bst/ojquestion" target="_blank" class="question-link">Convert Sorted DLL to BST</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="serialize-deserialize-bst">
+                                <a href="https://leetcode.com/problems/serialize-and-deserialize-bst/" target="_blank" class="question-link">Serialize & Deserialize BST</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="balance-a-bst">
+                                <a href="https://leetcode.com/problems/balance-a-binary-search-tree/" target="_blank" class="question-link">Balance a BST</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="depth-of-bst-from-array">
+                                <a href="https://www.codingninjas.com/codestudio/problems/depth-of-bst_2221406" target="_blank" class="question-link">Depth of BST from Array</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            Check for BST (6 problems) <span class="arrow">></span>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="question-item" data-id="validate-bst-leetcode">
+                                <a href="https://leetcode.com/problems/validate-binary-search-tree/" target="_blank" class="question-link">Validate BST</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="validate-bst-gfg">
+                                <a href="https://www.geeksforgeeks.org/a-program-to-check-if-a-binary-tree-is-bst-or-not/" target="_blank" class="question-link">Validate BST</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="largest-bst-subtree">
+                                <a href="https://practice.geeksforgeeks.org/problems/largest-bst/1" target="_blank" class="question-link">Largest BST Subtree</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="max-sum-bst-subtree">
+                                <a href="https://leetcode.com/problems/maximum-sum-bst-in-binary-tree/" target="_blank" class="question-link">Max Sum BST Subtree</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="check-dead-end-in-bst">
+                                <a href="https://practice.geeksforgeeks.org/problems/check-whether-bst-contains-dead-end/1" target="_blank" class="question-link">Check Dead End in BST</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="verify-preorder-of-bst">
+                                <a href="https://practice.geeksforgeeks.org/problems/preorder-traversal-and-bst4006/1" target="_blank" class="question-link">Verify Preorder of BST</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="../script.js"></script>
+</body>
+</html>

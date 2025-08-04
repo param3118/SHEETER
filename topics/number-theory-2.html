@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Theory - DSA Tracker</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container topic-details" data-topic="number-theory">
+        <header>
+            <div class="toolbar">
+                <a href="../index.html" class="back-button">← Back to Topics</a>
+                <div class="search-filter-group">
+                    <input type="text" id="searchInput" placeholder="Search questions...">
+                    <select id="statusFilter">
+                        <option value="all">All Statuses</option>
+                        <option value="not-started">Not Started</option>
+                        <option value="in-progress">In Progress</option>
+                        <option value="solved">Solved</option>
+                        <option value="review">Review</option>
+                    </select>
+                    <button id="exportBtn" class="action-button">Export Progress</button>
+                    <input type="file" id="importFile" accept=".json" style="display: none;">
+                    <button onclick="document.getElementById('importFile').click()" class="action-button">Import Progress</button>
+                </div>
+            </div>
+            <h1>Number Theory</h1>
+            <h3 id="progress-header">Progress: 0 / 41</h3>
+        </header>
+
+        <section>
+            <div class="accordion-item">
+                <div class="accordion-header active">
+                    Divisors (15 Problems) <span class="arrow">></span>
+                </div>
+                <div class="accordion-content active">
+                    <div class="question-item" data-id="sum-of-divisors-1-to-n-gfg">
+                        <a href="https://practice.geeksforgeeks.org/problems/sum-of-all-divisors-from-1-to-n/0" target="_blank" class="question-link">Sum of all divisors from 1 to n (GFG)</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="number-of-divisors-gfg">
+                        <a href="https://practice.geeksforgeeks.org/problems/number-of-divisors-of-a-given-number/1" target="_blank" class="question-link">Number of divisors of a given number (GFG)</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="count-4-divisors-gfg">
+                        <a href="https://practice.geeksforgeeks.org/problems/count-numbers-having-exactly-4-divisors/0" target="_blank" class="question-link">Count numbers having exactly 4 divisors (GFG)</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="efficient-method-store-divisors-gfg">
+                        <a href="https://www.geeksforgeeks.org/efficient-way-to-store-all-divisors-of-n/" target="_blank" class="question-link">Efficient method to store divisors (GFG)</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="print-all-divisors-sqrt-n-gfg">
+                        <a href="https://practice.geeksforgeeks.org/problems/print-all-divisors-of-a-given-number/1" target="_blank" class="question-link">Print all divisors in O(sqrt n) (GFG)</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="largest-divisor-smaller-than-n-gfg">
+                        <a href="https://www.geeksforgeeks.org/largest-divisor-of-a-number-n-smaller-than-n/" target="_blank" class="question-link">Largest divisor smaller than n (GFG)</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="check-divisibility-by-7-gfg">
+                        <a href="https://practice.geeksforgeeks.org/problems/divisibility-by-7-1587115620/1" target="_blank" class="question-link">Check divisibility by 7 using recursion (GFG)</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="divisibility-by-11-trick-gfg">
+                        <a href="https://www.geeksforgeeks.org/divisibility-by-11-trick/" target="_blank" class="question-link">Divisibility by 11 trick (GFG)</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="sum-of-proper-divisors-gfg">
+                        <a href="https://practice.geeksforgeeks.org/problems/sum-of-proper-divisors/0" target="_blank" class="question-link">Sum of all proper divisors (GFG)</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="common-divisors-gfg">
+                        <a href="https://practice.geeksforgeeks.org/problems/common-divisors4712/1" target="_blank" class="question-link">Print common divisors of two numbers (GFG)</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="element-appearing-more-than-25-lc">
+                        <a href="https://leetcode.com/problems/element-appearing-more-than-25-in-sorted-array/" target="_blank" class="question-link">Element Appearing More Than 25% in Sorted Array (LC 1287)</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="four-divisors-lc">
+                        <a href="https://leetcode.com/problems/four-divisors/" target="_blank" class="question-link">Four Divisors (LC 1390)</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="kth-factor-lc">
+                        <a href="https://leetcode.com/problems/the-kth-factor-of-n/" target="_blank" class="question-link">The kth Factor of n (LC 1492)</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="three-divisors-lc">
+                        <a href="https://leetcode.com/problems/three-divisors/" target="_blank" class="question-link">Three Divisors (LC 1952)</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="number-of-different-subsequences-gcds-lc">
+                        <a href="https://leetcode.com/problems/number-of-different-subsequences-gcds/" target="_blank" class="question-link">Number of Different Subsequences GCDs (LC 1819)</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    LCM (6 Problems) <span class="arrow">></span>
+                </div>
+                <div class="accordion-content">
+                    <div class="question-item" data-id="lcm-of-two-numbers-gfg">
+                        <a href="https://practice.geeksforgeeks.org/problems/lcm-and-gcd4516/1" target="_blank" class="question-link">LCM of two numbers (GFG)</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="lcm-of-n-numbers-gfg">
+                        <a href="https://practice.geeksforgeeks.org/problems/lcm-of-n-numbers/1" target="_blank" class="question-link">LCM of n numbers (GFG)</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="smallest-num-divisible-by-1-to-n-gfg">
+                        <a href="https://practice.geeksforgeeks.org/problems/smallest-number-divisible-by-all-from-1-to-n/0" target="_blank" class="question-link">Smallest number divisible by all from 1 to n (GFG)</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="find-smallest-num-given-divisors-gfg">
+                        <a href="https://practice.geeksforgeeks.org/problems/find-the-smallest-number-with-n-divisors/0" target="_blank" class="question-link">Find smallest number with given number of divisors (GFG)</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="alternating-digit-sum-lc">
+                        <a href="https://leetcode.com/problems/alternating-digit-sum/" target="_blank" class="question-link">Alternating Digit Sum (LC 2544)</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="count-distinct-numbers-on-board-lc">
+                        <a href="https://leetcode.com/problems/count-distinct-numbers-on-board/" target="_blank" class="question-link">Count Distinct Numbers on Board (LC 2549)</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    Prime Numbers (11 Problems) <span class="arrow">></span>
+                </div>
+                <div class="accordion-content">
+                    <div class="question-item" data-id="check-if-prime-gfg">
+                        <a href="https://practice.geeksforgeeks.org/problems/prime-number2314/1" target="_blank" class="question-link">Check if a number is prime (GFG)</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="sieve-of-eratosthenes-gfg">
+                        <a href="https://practice.geeksforgeeks.org/problems/sieve-of-eratosthenes/1" target="_blank" class="question-link">Sieve of Eratosthenes (GFG)</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="count-primes-in-range-gfg">
+                        <a href="https://practice.geeksforgeeks.org/problems/count-primes-in-range1604/1" target="_blank" class="question-link">Count Primes in a range (GFG)</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="segmented-sieve-gfg">
+                        <a href="https://www.geeksforgeeks.org/segmented-sieve/" target="_blank" class="question-link">Segmented Sieve (GFG)</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="prime-factorization-gfg">
+                        <a href="https://practice.geeksforgeeks.org/problems/prime-factors5052/1" target="_blank" class="question-link">Prime Factorization (GFG)</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="sum-of-all-primes-n-gfg">
+                        <a href="https://practice.geeksforgeeks.org/problems/sum-of-all-primes/0" target="_blank" class="question-link">Sum of all primes <= N (GFG)</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="count-primes-lc">
+                        <a href="https://leetcode.com/problems/count-primes/" target="_blank" class="question-link">Count Primes (LC 204)</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="add-digits-lc">
+                        <a href="https://leetcode.com/problems/add-digits/" target="_blank" class="question-link">Add Digits (LC 258)</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="prime-arrangements-lc">
+                        <a href="https://leetcode.com/problems/prime-arrangements/" target="_blank" class="question-link">Prime Arrangements (LC 1175)</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="prime-number-of-set-bits-lc">
+                        <a href="https://leetcode.com/problems/prime-number-of-set-bits-in-binary-representation/" target="_blank" class="question-link">Prime Number of Set Bits in Binary Representation (LC 1456)</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="closest-prime-in-range-lc">
+                        <a href="https://leetcode.com/problems/closest-prime-numbers-in-range/" target="_blank" class="question-link">Closest Prime Numbers in Range (LC 2523)</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                </div>
+            </div>
+
+           <!-- GCD Problems (Categorized) -->
+<div class="accordion-item">
+    <div class="accordion-header">
+        GCD (7 Problems) <span class="arrow">></span>
+    </div>
+    <div class="accordion-content">
+
+        <!-- 🧮 Mathematical -->
+        <div class="question-item" data-id="sum-of-gcd-pairs-gfg">
+            <a href="https://practice.geeksforgeeks.org/problems/sum-of-gcd-of-all-pairs/1" target="_blank" class="question-link">Sum of GCD of All Pairs (GFG)</a>
+            <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+            <button class="notes-toggle">Notes</button>
+            <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+        </div>
+
+        <!-- 🧠 Array-Based -->
+        <div class="question-item" data-id="gcd-of-array-lc">
+            <a href="https://leetcode.com/problems/find-greatest-common-divisor-of-array/" target="_blank" class="question-link">Find GCD of Array (LC 1979)</a>
+            <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+            <button class="notes-toggle">Notes</button>
+            <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+        </div>
+
+        <!-- 🔀 String -->
+        <div class="question-item" data-id="gcd-of-strings-lc">
+            <a href="https://leetcode.com/problems/greatest-common-divisor-of-strings/" target="_blank" class="question-link">Greatest Common Divisor of Strings (LC 1071)</a>
+            <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+            <button class="notes-toggle">Notes</button>
+            <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+        </div>
+
+        <!-- 🧠 Advanced / Array -->
+        <div class="question-item" data-id="number-of-different-subsequences-gcds-lc">
+            <a href="https://leetcode.com/problems/number-of-different-subsequences-gcds/" target="_blank" class="question-link">Number of Different Subsequences GCDs (LC 1819)</a>
+            <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+            <button class="notes-toggle">Notes</button>
+            <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+        </div>
+
+        <!-- 🧮 Basic Application -->
+        <div class="question-item" data-id="min-ops-to-make-gcd-1-lc">
+            <a href="https://leetcode.com/problems/minimum-number-of-operations-to-make-all-array-elements-equal-to-1/" target="_blank" class="question-link">Min Ops to Make All Array Elements 1 (LC 2654)</a>
+            <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+            <button class="notes-toggle">Notes</button>
+            <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+        </div>
+
+        <!-- 🧠 Euler Function -->
+        <div class="question-item" data-id="euler-totient-gfg">
+            <a href="https://practice.geeksforgeeks.org/problems/eulers-totient-function/1" target="_blank" class="question-link">Euler’s Totient Function (GFG)</a>
+            <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+            <button class="notes-toggle">Notes</button>
+            <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+        </div>
+    </div>
+</div>
+
+<!-- Coprime Problems -->
+<div class="accordion-item">
+    <div class="accordion-header">
+        Coprime (3 Problems) <span class="arrow">></span>
+    </div>
+    <div class="accordion-content">
+        <div class="question-item" data-id="find-count-of-coprime-pairs-gfg">
+            <a href="https://practice.geeksforgeeks.org/problems/count-of-coprime-pairs/0" target="_blank" class="question-link">Find Count of Coprime Pairs (GFG)</a>
+            <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+            <button class="notes-toggle">Notes</button>
+            <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+        </div>
+        <div class="question-item" data-id="pairwise-co-prime-numbers-gfg">
+            <a href="https://practice.geeksforgeeks.org/problems/pairwise-co-prime-numbers/0" target="_blank" class="question-link">Pairwise Co-prime Numbers (GFG)</a>
+            <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+            <button class="notes-toggle">Notes</button>
+            <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+        </div>
+        <div class="question-item" data-id="smallest-coprime-greater-than-x-gfg">
+            <a href="https://www.geeksforgeeks.org/smallest-co-prime-number-greater-than-x/" target="_blank" class="question-link">Smallest Coprime Greater Than X (GFG)</a>
+            <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+            <button class="notes-toggle">Notes</button>
+            <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+        </div>
+    </div>
+</div>
+
+        </section>
+    </div>
+    <script src="../script.js"></script>
+</body>
+</html>

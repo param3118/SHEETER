@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bit Manipulation - DSA Tracker</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container topic-details" data-topic="bit-manipulation">
+        <header>
+            <div class="toolbar">
+                <a href="../index.html" class="back-button">← Back to Topics</a>
+                <div class="search-filter-group">
+                    <input type="text" id="searchInput" placeholder="Search questions...">
+                    <select id="statusFilter">
+                        <option value="all">All Statuses</option>
+                        <option value="not-started">Not Started</option>
+                        <option value="in-progress">In Progress</option>
+                        <option value="solved">Solved</option>
+                        <option value="review">Review</option>
+                    </select>
+                    <button id="exportBtn" class="action-button">Export Progress</button>
+                    <input type="file" id="importFile" accept=".json" style="display: none;">
+                    <button onclick="document.getElementById('importFile').click()" class="action-button">Import Progress</button>
+                </div>
+            </div>
+            <h1>Bit Manipulation</h1>
+            <h3 id="progress-header">Progress: 0 / 100</h3>
+        </header>
+
+        <section>
+            <div class="accordion-item">
+                <div class="accordion-header active">
+                    Number System (16 problems) <span class="arrow">></span>
+                </div>
+                <div class="accordion-content active">
+                    <div class="question-item" data-id="decimal-to-any-base">
+                        <a href="https://practice.geeksforgeeks.org/problems/decimal-to-any-base-conversion2440/0" target="_blank" class="question-link">Decimal to Any Base</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="sum-of-digits-in-base-k">
+                        <a href="https://leetcode.com/problems/sum-of-digits-in-base-k/" target="_blank" class="question-link">Sum of Digits in Base K</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="decimal-to-base-7">
+                        <a href="https://leetcode.com/problems/base-7/" target="_blank" class="question-link">Decimal to Base 7</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="decimal-to-hexadecimal">
+                        <a href="https://leetcode.com/problems/convert-a-number-to-hexadecimal/" target="_blank" class="question-link">Decimal to Hexadecimal</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="decimal-to-neg-2-base">
+                        <a href="https://leetcode.com/problems/convert-to-base-2/" target="_blank" class="question-link">Decimal to -2 Base</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="any-base-to-decimal">
+                        <a href="https://practice.geeksforgeeks.org/problems/convert-from-any-base-to-decimal3736/1" target="_blank" class="question-link">Any Base to Decimal</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="convert-binary-to-decimal">
+                        <a href="https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/" target="_blank" class="question-link">Convert Binary to Decimal</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="any-base-to-any-base-pepcoding">
+                        <a href="https://www.pepcoding.com/resources/online-java-foundation/function-and-arrays/any-base-to-any-base-official/ojquestion" target="_blank" class="question-link">Any Base to Any Base</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="any-base-addition-pepcoding">
+                        <a href="https://www.pepcoding.com/resources/online-java-foundation/function-and-arrays/any-base-addition-official/ojquestion" target="_blank" class="question-link">Any Base Addition</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="any-base-addition-gfg">
+                        <a href="https://www.geeksforgeeks.org/program-to-add-two-integers-of-given-base/" target="_blank" class="question-link">Any Base Addition</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="add-binary-numbers">
+                        <a href="https://leetcode.com/problems/add-binary/" target="_blank" class="question-link">Add Binary Numbers</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="add-negabinary-numbers">
+                        <a href="https://leetcode.com/problems/adding-two-negabinary-numbers/" target="_blank" class="question-link">Add -2 Base Numbers</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="any-base-subtraction-pepcoding">
+                        <a href="https://www.pepcoding.com/resources/online-java-foundation/function-and-arrays/any-base-subtraction-official/ojquestion" target="_blank" class="question-link">Any Base Subtraction</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="any-base-subtraction-gfg">
+                        <a href="https://www.geeksforgeeks.org/program-to-subtract-two-integers-of-given-base/" target="_blank" class="question-link">Any Base Subtraction</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="any-base-multiplication-hackerearth">
+                        <a href="https://www.hackerearth.com/problem/algorithm/any-base-multiplication-65d2d68b/" target="_blank" class="question-link">Any Base Multiplication</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="any-base-multiplication-pepcoding">
+                        <a href="https://www.pepcoding.com/resources/online-java-foundation/function-and-arrays/any-base-multiplication-official/ojquestion" target="_blank" class="question-link">Any Base Multiplication</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    Bitmasking Basics (10 problems) <span class="arrow">></span>
+                </div>
+                <div class="accordion-content">
+                    <div class="question-item" data-id="bit-manipulation-theory">
+                        <a href="https://www.scaler.com/topics/data-structures/bit-masking/" target="_blank" class="question-link">Bit Manipulation Theory</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="bitmasking-tricks-gfg">
+                        <a href="https://www.geeksforgeeks.org/bits-manipulation-important-tactics/" target="_blank" class="question-link">Bitmasking Tricks</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="binary-representation">
+                        <a href="https://practice.geeksforgeeks.org/problems/binary-representation5003/1" target="_blank" class="question-link">Binary Representation</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="1s-complement">
+                        <a href="https://leetcode.com/problems/number-complement/" target="_blank" class="question-link">1s Complement</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="2s-complement">
+                        <a href="https://practice.geeksforgeeks.org/problems/2s-complement3124/1" target="_blank" class="question-link">2s Complement</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="check-bits">
+                        <a href="https://practice.geeksforgeeks.org/problems/check-whether-k-th-bit-is-set-or-not-1587115620/1" target="_blank" class="question-link">Check Bits</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="check-odd-or-even">
+                        <a href="https://practice.geeksforgeeks.org/problems/odd-or-even3618/1" target="_blank" class="question-link">Check Odd or Even</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="set-bits">
+                        <a href="https://practice.geeksforgeeks.org/problems/set-kth-bit3724/1" target="_blank" class="question-link">Set Bits</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="unset-or-clear-bits">
+                        <a href="https://www.codingninjas.com/codestudio/problems/reset-in-range_972998" target="_blank" class="question-link">Unset or Clear Bits</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="toggle-bits">
+                        <a href="https://practice.geeksforgeeks.org/problems/toggle-bits-given-range0952/1" target="_blank" class="question-link">Toggle Bits</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="swap-2-nos-using-bits">
+                        <a href="https://practice.geeksforgeeks.org/problems/swap-two-numbers3844/1" target="_blank" class="question-link">Swap 2 Nos Using Bits</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="power-set-using-bits-gfg">
+                        <a href="https://practice.geeksforgeeks.org/problems/power-set4302/1" target="_blank" class="question-link">Power Set Using Bits</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    Hamming Weight (10 problems) <span class="arrow">></span>
+                </div>
+                <div class="accordion-content">
+                    <div class="question-item" data-id="find-rightmost-set-bit">
+                        <a href="https://practice.geeksforgeeks.org/problems/find-first-set-bit-1587115620/1" target="_blank" class="question-link">Find Rightmost Set Bit</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="rightmost-setbit-mask-youtube">
+                        <a href="https://www.youtube.com/watch?v=XcSr6TIMl7w&feature=emb_logo" target="_blank" class="question-link">Rightmost Setbit Mask</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="set-rightmost-unset-bit">
+                        <a href="https://practice.geeksforgeeks.org/problems/set-the-rightmost-unset-bit4436/1" target="_blank" class="question-link">Set Rightmost Unset Bit</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="hamming-weight-i">
+                        <a href="https://leetcode.com/problems/number-of-1-bits/" target="_blank" class="question-link">Hamming Weight - I</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="kernighans-algorithm">
+                        <a href="https://www.youtube.com/watch?v=I475waWiTK4&ab_channel=Pepcoding" target="_blank" class="question-link">Kernighan's Algorithm</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="hamming-weight-ii">
+                        <a href="https://leetcode.com/problems/counting-bits/" target="_blank" class="question-link">Hamming Weight - II</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="hamming-distance">
+                        <a href="https://leetcode.com/problems/hamming-distance/" target="_blank" class="question-link">Hamming Distance</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="total-hamming-distance">
+                        <a href="https://leetcode.com/problems/total-hamming-distance/" target="_blank" class="question-link">Total Hamming Distance</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="prime-set-bits">
+                        <a href="https://leetcode.com/problems/prime-number-of-set-bits-in-binary-representation/" target="_blank" class="question-link">Prime Set Bits</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="steps-reduce-to-0">
+                        <a href="https://leetcode.com/problems/number-of-steps-to-reduce-a-number-to-zero/" target="_blank" class="question-link">Steps Reduce to 0</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    Bitset Problems (11 problems) <span class="arrow">></span>
+                </div>
+                <div class="accordion-content">
+                    <div class="question-item" data-id="min-bit-flips-to-convert-no">
+                        <a href="https://leetcode.com/problems/minimum-bit-flips-to-convert-number/" target="_blank" class="question-link">Min Bit Flips to Convert No</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="same-no-of-set-bits-gfg">
+                        <a href="https://practice.geeksforgeeks.org/problems/shreyansh-and-his-bits1420/1" target="_blank" class="question-link">Same No of Set Bits</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="copy-set-bits-in-range-gfg">
+                        <a href="https://practice.geeksforgeeks.org/problems/copy-set-bits-in-range0623/1" target="_blank" class="question-link">Copy Set Bits in Range</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="reverse-bits-leetcode">
+                        <a href="https://leetcode.com/problems/reverse-bits/" target="_blank" class="question-link">Reverse Bits</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="swap-odd-even-bits">
+                        <a href="https://practice.geeksforgeeks.org/problems/swap-all-odd-and-even-bits-1587115621/1" target="_blank" class="question-link">Swap Odd Even Bits</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="swap-nibbles-in-byte">
+                        <a href="https://practice.geeksforgeeks.org/problems/swap-two-nibbles-in-a-byte0446/1" target="_blank" class="question-link">Swap Nibbles in Byte</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="check-power-of-2">
+                        <a href="https://leetcode.com/problems/power-of-two/" target="_blank" class="question-link">Check Power of 2</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="highest-power-of-2">
+                        <a href="https://www.geeksforgeeks.org/highest-power-2-less-equal-given-number/" target="_blank" class="question-link">Highest Power of 2</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="check-power-of-3">
+                        <a href="https://leetcode.com/problems/power-of-three/" target="_blank" class="question-link">Check Power of 3</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="check-power-of-4">
+                        <a href="https://leetcode.com/problems/power-of-four/" target="_blank" class="question-link">Check Power of 4</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    Gray Codes (5 problems) <span class="arrow">></span>
+                </div>
+                <div class="accordion-content">
+                    <div class="question-item" data-id="generate-gray-codes-i">
+                        <a href="https://leetcode.com/problems/gray-code/" target="_blank" class="question-link">Generate Gray Codes - I</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="generate-gray-codes-ii">
+                        <a href="https://practice.geeksforgeeks.org/problems/generate-grey-code-sequences/1" target="_blank" class="question-link">Generate Gray Codes - II</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="gray-binary-conversion">
+                        <a href="https://practice.geeksforgeeks.org/problems/gray-to-binary-and-binary-to-gray5518/1" target="_blank" class="question-link">Gray - Binary Conversion</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="binary-to-gray-conversion">
+                        <a href="https://www.youtube.com/watch?v=AzyG_wL3qMY&ab_channel=TutorialsPoint%28India%29Ltd." target="_blank" class="question-link">Binary to Gray Conversion</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="gray-to-binary-conversion">
+                        <a href="https://www.youtube.com/watch?v=fxBEB8i7ToM&ab_channel=TutorialsPoint%28India%29Ltd." target="_blank" class="question-link">Gray to Binary Conversion</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    Single Number (3 problems) <span class="arrow">></span>
+                </div>
+                <div class="accordion-content">
+                    <div class="question-item" data-id="single-number-i-leetcode">
+                        <a href="https://leetcode.com/problems/single-number/" target="_blank" class="question-link">Single Number - I</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="single-number-ii-leetcode">
+                        <a href="https://leetcode.com/problems/single-number-ii/" target="_blank" class="question-link">Single Number - II</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="single-number-iii-leetcode">
+                        <a href="https://leetcode.com/problems/single-number-iii/" target="_blank" class="question-link">Single Number - III</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    XOR Problems (7 problems) <span class="arrow">></span>
+                </div>
+                <div class="accordion-content">
+                    <div class="question-item" data-id="triplets-with-equal-xor">
+                        <a href="https://leetcode.com/problems/count-triplets-that-can-form-two-arrays-of-equal-xor/" target="_blank" class="question-link">Triplets with = XOR</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="xor-of-sum-of-pairs">
+                        <a href="https://www.geeksforgeeks.org/xor-sum-every-possible-pair-array/" target="_blank" class="question-link">XOR of Sum of Pairs</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="min-xor-pair">
+                        <a href="https://www.interviewbit.com/problems/min-xor-value/" target="_blank" class="question-link">Min Xor Pair</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="xor-subarray-queries">
+                        <a href="https://leetcode.com/problems/xor-queries-of-a-subarray/" target="_blank" class="question-link">Xor Subarray Queries</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="max-xor-in-range">
+                        <a href="https://www.hackerrank.com/challenges/maximizing-xor/problem" target="_blank" class="question-link">Max XOR in Range</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="xor-of-all-subarrays">
+                        <a href="https://practice.geeksforgeeks.org/problems/game-of-xor1541/1" target="_blank" class="question-link">XOR of All Subarrays</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="count-pairs-equal-xor">
+                        <a href="https://www.interviewbit.com/problems/pairs-with-given-xor/" target="_blank" class="question-link">Count Pairs = XOR</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="bitwise-and-of-range">
+                        <a href="https://leetcode.com/problems/bitwise-and-of-numbers-range/" target="_blank" class="question-link">Bitwise AND of Range</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    More Bits Problems (9 problems) <span class="arrow">></span>
+                </div>
+                <div class="accordion-content">
+                    <div class="question-item" data-id="josephus-special-case-pepcoding">
+                        <a href="https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/bit-manipulation/josephus-special-official/ojquestion" target="_blank" class="question-link">Josephus Special Case</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="josephus-special-case-gfg">
+                        <a href="https://www.geeksforgeeks.org/josephus-problem-set-2-simple-solution-k-2/" target="_blank" class="question-link">Josephus Special Case</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="divide-integers-wo-operators">
+                        <a href="https://leetcode.com/problems/divide-two-integers/" target="_blank" class="question-link">Divide Integers w/o Operators</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="add-integers-wo-operators">
+                        <a href="https://leetcode.com/problems/sum-of-two-integers/" target="_blank" class="question-link">Add Integers w/o Operators</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="valid-words-for-puzzle">
+                        <a href="https://leetcode.com/problems/number-of-valid-words-for-each-puzzle/" target="_blank" class="question-link">Valid Words for Puzzle</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="integer-replacement">
+                        <a href="https://leetcode.com/problems/integer-replacement/" target="_blank" class="question-link">Integer Replacement</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="is-no-multiple-of-3">
+                        <a href="https://practice.geeksforgeeks.org/problems/is-binary-number-multiple-of-30654/1" target="_blank" class="question-link">Is No Multiple of 3</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="utf-8-encoding">
+                        <a href="https://leetcode.com/problems/utf-8-validation/" target="_blank" class="question-link">UTF - 8 Encoding</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="palindromic-binary-no">
+                        <a href="https://www.interviewbit.com/problems/palindromic-binary-representation/" target="_blank" class="question-link">Palindromic Binary No</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="binary-substrings-1-to-n">
+                        <a href="https://leetcode.com/problems/binary-string-with-substrings-representing-1-to-n/" target="_blank" class="question-link">Binary Substrings 1 to N</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="count-steps-to-reduce-to-1">
+                        <a href="https://leetcode.com/problems/number-of-steps-to-reduce-a-number-in-binary-representation-to-one/" target="_blank" class="question-link">Count Steps to Reduce to 1</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="../script.js"></script>
+</body>
+</html>

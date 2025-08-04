@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hashmap & Heaps - DSA Tracker</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container topic-details" data-topic="hashmap-and-heaps">
+        <header>
+            <div class="toolbar">
+                <a href="../index.html" class="back-button">← Back to Topics</a>
+                <div class="search-filter-group">
+                    <input type="text" id="searchInput" placeholder="Search questions...">
+                    <select id="statusFilter">
+                        <option value="all">All Statuses</option>
+                        <option value="not-started">Not Started</option>
+                        <option value="in-progress">In Progress</option>
+                        <option value="solved">Solved</option>
+                        <option value="review">Review</option>
+                    </select>
+                    <button id="exportBtn" class="action-button">Export Progress</button>
+                    <input type="file" id="importFile" accept=".json" style="display: none;">
+                    <button onclick="document.getElementById('importFile').click()" class="action-button">Import Progress</button>
+                </div>
+            </div>
+            <h1>Hashmap & Heaps</h1>
+            <h3 id="progress-header">Progress: 0 / 100</h3>
+        </header>
+
+        <section>
+            <div class="accordion-item">
+                <div class="accordion-header active">
+                    Hashing Technique (7 problems) <span class="arrow">></span>
+                </div>
+                <div class="accordion-content active">
+                    <div class="question-item" data-id="hashing-theory">
+                        <a href="https://www.scaler.com/topics/data-structures/hashing-in-data-structure/" target="_blank" class="question-link">Hashing Theory</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="separate-chaining">
+                        <a href="https://www.scaler.com/topics/data-structures/separate-chaining/" target="_blank" class="question-link">Separate Chaining</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="open-addressing">
+                        <a href="https://www.scaler.com/topics/data-structures/open-addressing/" target="_blank" class="question-link">Open Addressing</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="double-hashing">
+                        <a href="https://www.scaler.com/topics/data-structures/double-hashing/" target="_blank" class="question-link">Double Hashing</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="rehashing">
+                        <a href="https://www.scaler.com/topics/data-structures/load-factor-and-rehashing/" target="_blank" class="question-link">Rehashing</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="hashing-technique-youtube">
+                        <a href="https://www.youtube.com/playlist?list=PLTAWODwDBzMw3DjbudMeh7vnx-3OOmtq1" target="_blank" class="question-link">Hashing Technique</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="design-hashmap">
+                        <a href="https://leetcode.com/problems/design-hashmap/" target="_blank" class="question-link">Design HashMap</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="design-hashset">
+                        <a href="https://leetcode.com/problems/design-hashset/" target="_blank" class="question-link">Design HashSet</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    Intersection & Union (8 problems) <span class="arrow">></span>
+                </div>
+                <div class="accordion-content">
+                    <div class="question-item" data-id="common-elements">
+                        <a href="https://leetcode.com/problems/find-common-characters/" target="_blank" class="question-link">Common Elements</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="uncommon-elements">
+                        <a href="https://leetcode.com/problems/uncommon-words-from-two-sentences/" target="_blank" class="question-link">Uncommon Elements</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="union-of-unsorted-arrays">
+                        <a href="https://practice.geeksforgeeks.org/problems/union-of-two-arrays3538/1" target="_blank" class="question-link">Union of Unsorted Arrays</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="common-elements-in-2-of-3">
+                        <a href="https://www.interviewbit.com/problems/two-out-of-three/" target="_blank" class="question-link">Common Elements in 2 of 3</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="contains-duplicate-i">
+                        <a href="https://leetcode.com/problems/contains-duplicate/" target="_blank" class="question-link">Contains Duplicate - I</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="contains-duplicate-ii">
+                        <a href="https://leetcode.com/problems/contains-duplicate-ii/" target="_blank" class="question-link">Contains Duplicate - II</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="contains-duplicate-iii">
+                        <a href="https://leetcode.com/problems/contains-duplicate-iii/" target="_blank" class="question-link">Contains Duplicate - III</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="first-repeating-element">
+                        <a href="https://practice.geeksforgeeks.org/problems/first-repeating-element4018/1" target="_blank" class="question-link">First Repeating Element</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="first-unique-element">
+                        <a href="https://practice.geeksforgeeks.org/problems/non-repeating-element3958/1" target="_blank" class="question-link">First Unique Element</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    Subarray Sum (13 problems) <span class="arrow">></span>
+                </div>
+                <div class="accordion-content">
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            Target Subarray Sum (9 problems) <span class="arrow">></span>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="question-item" data-id="0-sum-subarray">
+                                <a href="https://practice.geeksforgeeks.org/problems/subarray-with-0-sum-1587115621/1" target="_blank" class="question-link">0 Sum Subarray</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="largest-0-sum-subarray">
+                                <a href="https://practice.geeksforgeeks.org/problems/largest-subarray-with-0-sum/1" target="_blank" class="question-link">Largest 0 Sum Subarray</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="count-0-sum-subarrays">
+                                <a href="https://practice.geeksforgeeks.org/problems/zero-sum-subarrays1825/1" target="_blank" class="question-link">Count 0 Sum Subarrays</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="k-sum-subarray-gfg">
+                                <a href="https://practice.geeksforgeeks.org/problems/subarray-with-given-sum-1587115621/1" target="_blank" class="question-link">K Sum Subarray</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="k-sum-subarray-positives">
+                                <a href="https://www.geeksforgeeks.org/find-subarray-with-given-sum/" target="_blank" class="question-link">K Sum Subarray - Only Positives</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="k-sum-subarray-with-negatives">
+                                <a href="https://www.geeksforgeeks.org/find-subarray-with-given-sum-in-array-of-integers/" target="_blank" class="question-link">K Sum Subarray - With Negatives</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="count-k-sum-subarrays">
+                                <a href="https://leetcode.com/problems/subarray-sum-equals-k/" target="_blank" class="question-link">Count K Sum Subarrays</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="largest-k-sum-subarray">
+                                <a href="https://practice.geeksforgeeks.org/problems/longest-sub-array-with-sum-k0809/1" target="_blank" class="question-link">Largest K Sum Subarray</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="min-moves-reduce-x-to-0">
+                                <a href="https://leetcode.com/problems/minimum-operations-to-reduce-x-to-zero/" target="_blank" class="question-link">Min Moves Reduce X to 0</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="count-k-xor-subarrays">
+                                <a href="https://www.interviewbit.com/problems/subarray-with-given-xor/" target="_blank" class="question-link">Count K XOR Subarrays</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            Divisible Subarrays (8 problems) <span class="arrow">></span>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="question-item" data-id="largest-divisible-subarray">
+                                <a href="https://leetcode.com/problems/make-sum-divisible-by-p/" target="_blank" class="question-link">Largest Divisible Subarray</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="count-divisible-subarrays">
+                                <a href="https://leetcode.com/problems/subarray-sums-divisible-by-k/" target="_blank" class="question-link">Count Divisible Subarrays</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="k-multiple-subarray-sum">
+                                <a href="https://leetcode.com/problems/continuous-subarray-sum/" target="_blank" class="question-link">K Multiple Subarray Sum</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="count-bad-pairs-i">
+                                <a href="https://leetcode.com/problems/count-number-of-bad-pairs/" target="_blank" class="question-link">Count Bad Pairs - I</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="count-bad-pairs-ii">
+                                <a href="https://leetcode.com/problems/count-nice-pairs-in-an-array/" target="_blank" class="question-link">Count Bad Pairs - II</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="count-k-absolute-diff-pairs">
+                        <a href="https://leetcode.com/problems/count-number-of-pairs-with-absolute-difference-k/" target="_blank" class="question-link">Count K Absolute Diff Pairs</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="count-equal-divisible-pairs">
+                        <a href="https://leetcode.com/problems/count-equal-and-divisible-pairs-in-an-array/" target="_blank" class="question-link">Count Equal Divisible Pairs</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="count-equal-distance-points">
+                        <a href="https://practice.geeksforgeeks.org/problems/pairs-of-non-coinciding-points4141/1" target="_blank" class="question-link">Count Equal Distance Points</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    Binary Subarray Sum (6 problems) <span class="arrow">></span>
+                </div>
+                <div class="accordion-content">
+                    <div class="question-item" data-id="largest-subarray-equal-01">
+                        <a href="https://leetcode.com/problems/contiguous-array/" target="_blank" class="question-link">Largest Subarray Equal 01</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="count-subarrays-equal-01">
+                        <a href="https://practice.geeksforgeeks.org/problems/count-subarrays-with-equal-number-of-1s-and-0s-1587115620/1" target="_blank" class="question-link">Count Subarrays Equal 01</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="longest-subarray-equal-012">
+                        <a href="https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/hashmap-and-heaps/longest-subarray-with-equal-number-of-0s-1s-and-2s-official/ojquestion" target="_blank" class="question-link">Longest Subarray Equal 012</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="count-subarrays-equal-012">
+                        <a href="https://practice.geeksforgeeks.org/problems/equal-0-1-and-23208/1" target="_blank" class="question-link">Count Subarrays Equal 012</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="largest-subarray-more-1s">
+                        <a href="https://leetcode.com/problems/longest-well-performing-interval/" target="_blank" class="question-link">Largest Subarray More 1s</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="binary-subarray-target-sum">
+                        <a href="https://leetcode.com/problems/binary-subarrays-with-sum/" target="_blank" class="question-link">Binary Subarray Target Sum</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    Target Sum Submatrices (4 problems) <span class="arrow">></span>
+                </div>
+                <div class="accordion-content">
+                    <div class="question-item" data-id="count-0-sum-submatrix">
+                        <a href="https://www.interviewbit.com/problems/sub-matrices-with-sum-zero/" target="_blank" class="question-link">Count 0 Sum Submatrix</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="largest-0-sum-submatrix">
+                        <a href="https://practice.geeksforgeeks.org/problems/largest-rectangular-sub-matrix-whose-sum-is-0/1" target="_blank" class="question-link">Largest 0 Sum Submatrix</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="count-k-sum-submatrix">
+                        <a href="https://leetcode.com/problems/number-of-submatrices-that-sum-to-target/" target="_blank" class="question-link">Count K Sum Submatrix</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="largest-submatrix-equal-01">
+                        <a href="https://www.codingninjas.com/codestudio/problems/largest-submatrix-with-equal-number-of-0-s-and-1-s_1062689" target="_blank" class="question-link">Largest Submatrix Equal 01</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="max-sum-square-submatrix">
+                        <a href="https://www.interviewbit.com/problems/maximum-sum-square-submatrix/" target="_blank" class="question-link">Max Sum Square Submatrix</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    More Hashing Questions (13 problems) <span class="arrow">></span>
+                </div>
+                <div class="accordion-content">
+                    <div class="question-item" data-id="count-0-xor-pairs">
+                        <a href="https://practice.geeksforgeeks.org/problems/counts-zeros-xor-pairs0349/1" target="_blank" class="question-link">Count 0 XOR Pairs</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="degree-of-an-array">
+                        <a href="https://leetcode.com/problems/degree-of-an-array/" target="_blank" class="question-link">Degree of Array</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="longest-consecutive-sequence">
+                        <a href="https://leetcode.com/problems/longest-consecutive-sequence/" target="_blank" class="question-link">Longest Consecutive Sequence</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="tricky-sorting-cost">
+                        <a href="https://practice.geeksforgeeks.org/problems/morning-assembly3038/1" target="_blank" class="question-link">Tricky Sorting Cost</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="array-pairs-divisible-by-k">
+                        <a href="https://leetcode.com/problems/check-if-array-pairs-are-divisible-by-k/" target="_blank" class="question-link">Array Pairs Divisible by K</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="fraction-to-recurring-decimal">
+                        <a href="https://leetcode.com/problems/fraction-to-recurring-decimal/" target="_blank" class="question-link">Fraction to Recurring Decimal</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="rabbits-in-forest">
+                        <a href="https://leetcode.com/problems/rabbits-in-forest/" target="_blank" class="question-link">Rabbits in Forest</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="array-of-doubled-pairs">
+                        <a href="https://leetcode.com/problems/array-of-doubled-pairs/" target="_blank" class="question-link">Array of Doubled Pairs</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="powerful-integers">
+                        <a href="https://leetcode.com/problems/powerful-integers/" target="_blank" class="question-link">Powerful Integers</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="hand-of-straights">
+                        <a href="https://leetcode.com/problems/hand-of-straights/" target="_blank" class="question-link">Hand of Straights</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="rank-transform-of-array">
+                        <a href="https://leetcode.com/problems/rank-transform-of-an-array/" target="_blank" class="question-link">Rank Transform of Array</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="stream-disjoint-intervals">
+                        <a href="https://leetcode.com/problems/data-stream-as-disjoint-intervals/" target="_blank" class="question-link">Stream Disjoint Intervals</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="brick-wall">
+                        <a href="https://leetcode.com/problems/brick-wall/" target="_blank" class="question-link">Brick Wall</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="max-equal-frequency">
+                        <a href="https://leetcode.com/problems/maximum-equal-frequency/" target="_blank" class="question-link">Max Equal Frequency</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    Binary Heap (11 problems) <span class="arrow">></span>
+                </div>
+                <div class="accordion-content">
+                    <div class="question-item" data-id="heap-theory">
+                        <a href="https://www.scaler.com/topics/data-structures/heap-data-structure/" target="_blank" class="question-link">Heap Theory</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="priority-queue-theory">
+                        <a href="https://www.scaler.com/topics/data-structures/priority-queue-in-data-structure/" target="_blank" class="question-link">Priority Queue Theory</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="design-priority-queue-pepcoding">
+                        <a href="https://www.pepcoding.com/resources/online-java-foundation/hashmap-and-heap/priority-queue-using-heap-official/ojquestion" target="_blank" class="question-link">Design Priority Queue</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="design-priority-queue-youtube-35">
+                        <a href="https://www.youtube.com/watch?v=RIjxT24gUv4&ab_channel=Pepcoding" target="_blank" class="question-link">Design Priority Queue</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="build-min-heap-cn">
+                        <a href="https://www.codingninjas.com/codestudio/problems/build-min-heap_1171167" target="_blank" class="question-link">Build Min Heap</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="build-min-heap-youtube-36">
+                        <a href="https://www.youtube.com/watch?v=VFLNBh0bK2A&ab_channel=Pepcoding" target="_blank" class="question-link">Build Min Heap</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="comparable-comparator-scaler">
+                        <a href="https://www.scaler.com/topics/java/comparable-and-comparator-in-java/" target="_blank" class="question-link">Comparable & Comparator</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="comparable-comparator-youtube-37">
+                        <a href="https://www.youtube.com/watch?v=DE835GvxZMQ" target="_blank" class="question-link">Comparable & Comparator</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="heap-sort">
+                        <a href="https://practice.geeksforgeeks.org/problems/heap-sort/1" target="_blank" class="question-link">Heap Sort</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="heap-sort-mcq">
+                        <a href="https://www.geeksforgeeks.org/algorithms-sorting-question-21/" target="_blank" class="question-link">Heap Sort MCQ</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="does-array-represent-heap">
+                        <a href="https://practice.geeksforgeeks.org/problems/does-array-represent-heap4345/1" target="_blank" class="question-link">Does Array Represent Heap</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="is-binary-tree-heap">
+                        <a href="https://practice.geeksforgeeks.org/problems/is-binary-tree-heap/1" target="_blank" class="question-link">Is Binary Tree Heap</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="convert-min-to-max-heap">
+                        <a href="https://www.codingninjas.com/codestudio/problems/convert-min-heap-to-max-heap_1381084" target="_blank" class="question-link">Convert Min to Max Heap</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="convert-bst-to-min-heap">
+                        <a href="https://www.codingninjas.com/codestudio/problems/convert-bst-to-min-heap_920498" target="_blank" class="question-link">Convert BST to Min Heap</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="merge-two-max-heaps">
+                        <a href="https://practice.geeksforgeeks.org/problems/merge-two-binary-max-heap0144/1" target="_blank" class="question-link">Merge Two Max Heaps</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="priority-queue-using-list">
+                        <a href="https://www.geeksforgeeks.org/priority-queue-using-linked-list/" target="_blank" class="question-link">Priority Queue Using List</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="priority-queue-using-heap">
+                        <a href="https://www.geeksforgeeks.org/why-is-binary-heap-preferred-over-bst-for-priority-queue/" target="_blank" class="question-link">Priority Queue Using Heap</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    Heap Order Statistics (12 problems) <span class="arrow">></span>
+                </div>
+                <div class="accordion-content">
+                    <div class="question-item" data-id="k-largest-sorted-order">
+                        <a href="https://practice.geeksforgeeks.org/problems/k-largest-elements3736/1" target="_blank" class="question-link">K Largest - Sorted Order</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="k-largest-original-order">
+                        <a href="https://practice.geeksforgeeks.org/problems/print-k-smallest-elements-in-their-original-order/0" target="_blank" class="question-link">K Largest - Original Order</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="k-closest-points">
+                        <a href="https://leetcode.com/problems/k-closest-points-to-origin/" target="_blank" class="question-link">K Closest Points</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="kth-smallest-element">
+                        <a href="https://practice.geeksforgeeks.org/problems/kth-smallest-element5635/1" target="_blank" class="question-link">Kth Smallest Element</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="kth-largest-element">
+                        <a href="https://leetcode.com/problems/kth-largest-element-in-an-array/" target="_blank" class="question-link">Kth Largest Element</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="quick-select-algorithm">
+                        <a href="https://www.geeksforgeeks.org/quickselect-algorithm/" target="_blank" class="question-link">Quick Select Algorithm</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="kth-largest-in-stream">
+                        <a href="https://leetcode.com/problems/kth-largest-element-in-a-stream/" target="_blank" class="question-link">Kth Largest in Stream</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="kth-smallest-in-sorted-matrix">
+                        <a href="https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/" target="_blank" class="question-link">Kth Smallest in Sorted Matrix</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="k-min-sum-combinations">
+                        <a href="https://leetcode.com/problems/find-k-pairs-with-smallest-sums/" target="_blank" class="question-link">K Min Sum Combinations</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="kth-smallest-fraction">
+                        <a href="https://leetcode.com/problems/k-th-smallest-prime-fraction/" target="_blank" class="question-link">Kth Smallest Fraction</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="sort-k-sorted-array">
+                        <a href="https://practice.geeksforgeeks.org/problems/nearly-sorted-algorithm/0" target="_blank" class="question-link">Sort K Sorted Array</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="merge-k-sorted-arrays">
+                        <a href="https://practice.geeksforgeeks.org/problems/merge-k-sorted-arrays/1" target="_blank" class="question-link">Merge K Sorted Arrays</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="smallest-range-in-k-lists">
+                        <a href="https://leetcode.com/problems/smallest-range-covering-elements-from-k-lists/" target="_blank" class="question-link">Smallest Range in K Lists</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    Basic Geometry Problems (11 problems) <span class="arrow">></span>
+                </div>
+                <div class="accordion-content">
+                    <div class="question-item" data-id="basic-geometry">
+                        <a href="https://cp-algorithms.com/geometry/basic-geometry.html" target="_blank" class="question-link">Basic Geometry</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="geometric-algorithms">
+                        <a href="https://www.geeksforgeeks.org/geometric-algorithms/" target="_blank" class="question-link">Geometric Algorithms</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="rectangle-overlap">
+                        <a href="https://leetcode.com/problems/rectangle-overlap/" target="_blank" class="question-link">Rectangle Overlap</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="largest-triangle-perimeter">
+                        <a href="https://leetcode.com/problems/largest-perimeter-triangle/" target="_blank" class="question-link">Largest Triangle Perimeter</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="matrix-cells-in-order">
+                        <a href="https://leetcode.com/problems/matrix-cells-in-distance-order/" target="_blank" class="question-link">Matrix Cells in Order</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="largest-triangle-area">
+                        <a href="https://leetcode.com/problems/largest-triangle-area/" target="_blank" class="question-link">Largest Triangle Area</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="construct-rectangle">
+                        <a href="https://leetcode.com/problems/construct-the-rectangle/" target="_blank" class="question-link">Construct Rectangle</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="two-collinear-points">
+                        <a href="https://leetcode.com/problems/check-if-it-is-a-straight-line/" target="_blank" class="question-link">Two Collinear Points</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="non-collinear-points">
+                        <a href="https://leetcode.com/problems/valid-boomerang/" target="_blank" class="question-link">Non Collinear Points</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="valid-square-points">
+                        <a href="https://leetcode.com/problems/valid-square/" target="_blank" class="question-link">Valid Square Points</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="max-distance-points">
+                        <a href="https://leetcode.com/problems/maximum-of-absolute-value-expression/" target="_blank" class="question-link">Max Distance Points</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="total-rectangle-area">
+                        <a href="https://leetcode.com/problems/rectangle-area/" target="_blank" class="question-link">Total Rectangle Area</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="max-collinear-points">
+                        <a href="https://leetcode.com/problems/max-points-on-a-line/" target="_blank" class="question-link">Max Collinear Points</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="best-meeting-point">
+                        <a href="https://www.codingninjas.com/codestudio/problems/best-meeting-point_1463982" target="_blank" class="question-link">Best Meeting Point</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="line-reflection">
+                        <a href="https://www.codingninjas.com/codestudio/problems/line-reflection_1467109" target="_blank" class="question-link">Line Reflection</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="intersecting-lines">
+                        <a href="https://practice.geeksforgeeks.org/problems/check-if-two-line-segments-intersect0017/1" target="_blank" class="question-link">Intersecting Lines</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="check-pt-inside-triangle">
+                        <a href="https://www.geeksforgeeks.org/check-whether-a-given-point-lies-inside-a-triangle-or-not/" target="_blank" class="question-link">Check Pt Inside Triangle</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,1256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Competitive Programming - DSA Tracker</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container topic-details" data-topic="competitive-programming">
+        <header>
+            <div class="toolbar">
+                <a href="../index.html" class="back-button">← Back to Topics</a>
+                <div class="search-filter-group">
+                    <input type="text" id="searchInput" placeholder="Search questions...">
+                    <select id="statusFilter">
+                        <option value="all">All Statuses</option>
+                        <option value="not-started">Not Started</option>
+                        <option value="in-progress">In Progress</option>
+                        <option value="solved">Solved</option>
+                        <option value="review">Review</option>
+                    </select>
+                    <button id="exportBtn" class="action-button">Export Progress</button>
+                    <input type="file" id="importFile" accept=".json" style="display: none;">
+                    <button onclick="document.getElementById('importFile').click()" class="action-button">Import Progress</button>
+                </div>
+            </div>
+            <h1>Competitive Programming</h1>
+            <h3 id="progress-header">Progress: 0 / 100</h3>
+        </header>
+
+        <section>
+            <div class="accordion-item">
+                <div class="accordion-header active">
+                    Competitive Programming (3 problems) <span class="arrow">></span>
+                </div>
+                <div class="accordion-content active">
+                    <div class="question-item" data-id="cp-handbook">
+                        <a href="https://cses.fi/book/book.pdf" target="_blank" class="question-link">CP Handbook</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="cses-problem-set">
+                        <a href="https://cses.fi/problemset/list/" target="_blank" class="question-link">CSES Problem Set</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="cp-algorithms">
+                        <a href="https://cp-algorithms.com/" target="_blank" class="question-link">CP Algorithms</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    String Pattern Matching (13 problems) <span class="arrow">></span>
+                </div>
+                <div class="accordion-content">
+                    <div class="question-item" data-id="pattern-matching-youtube-85">
+                        <a href="https://www.youtube.com/playlist?list=PLTAWODwDBzMyQ2pxbLoYwXokpYsENvw85" target="_blank" class="question-link">Pattern Matching</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="search-occurence">
+                        <a href="https://practice.geeksforgeeks.org/problems/pattern-searching5231/1" target="_blank" class="question-link">Search Occurence</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="first-occurence">
+                        <a href="https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/" target="_blank" class="question-link">First Occurence</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="java-regular-expressions">
+                        <a href="https://www.scaler.com/topics/regular-expression-in-java/" target="_blank" class="question-link">Java Regular Expressions</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="longest-prefix-suffix">
+                        <a href="https://leetcode.com/problems/longest-happy-prefix/" target="_blank" class="question-link">Longest Prefix Suffix</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="longest-palindrome-prefix">
+                        <a href="https://www.geeksforgeeks.org/print-the-longest-palindromic-prefix-of-a-given-string/" target="_blank" class="question-link">Longest Palindrome Prefix</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="kmp-algorithm-gfg">
+                        <a href="https://practice.geeksforgeeks.org/problems/search-pattern0205/1" target="_blank" class="question-link">KMP Algorithm</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="repeated-string-pattern-i">
+                        <a href="https://leetcode.com/problems/repeated-substring-pattern/" target="_blank" class="question-link">Repeated String Pattern - I</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="repeated-string-pattern-ii">
+                        <a href="https://leetcode.com/problems/repeated-string-match/" target="_blank" class="question-link">Repeated String Pattern - II</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="kmp-z-algorithm-youtube">
+                        <a href="https://www.youtube.com/watch?v=bS33M8pKFNU&ab_channel=CodeChef" target="_blank" class="question-link">KMP & Z Algorithm</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="shortest-palindrome">
+                        <a href="https://leetcode.com/problems/shortest-palindrome/" target="_blank" class="question-link">Shortest Palindrome</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="string-hashing">
+                        <a href="https://cp-algorithms.com/string/string-hashing.html" target="_blank" class="question-link">String Hashing</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="rolling-hash-function">
+                        <a href="https://leetcode.com/problems/find-substring-with-given-hash-value/" target="_blank" class="question-link">Rolling Hash Function</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="rabin-karp-algorithm-gfg">
+                        <a href="https://practice.geeksforgeeks.org/problems/31272eef104840f7430ad9fd1d43b434a4b9596b/1" target="_blank" class="question-link">Rabin Karp Algorithm</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="rabin-karp-algorithm-programiz">
+                        <a href="https://www.programiz.com/dsa/rabin-karp-algorithm" target="_blank" class="question-link">Rabin Karp Algorithm</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="distinct-echo-substrings">
+                        <a href="https://leetcode.com/problems/distinct-echo-substrings/" target="_blank" class="question-link">Distinct Echo Substrings</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="repeated-dna-sequences">
+                        <a href="https://leetcode.com/problems/repeated-dna-sequences/" target="_blank" class="question-link">Repeated DNA Sequences</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="z-algorithm-gfg">
+                        <a href="https://practice.geeksforgeeks.org/problems/8dcd25918295847b4ced54055eae35a8501181c1/1" target="_blank" class="question-link">Z Algorithm</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="suffix-trees-scaler">
+                        <a href="https://www.scaler.com/topics/data-structures/suffix-tree/" target="_blank" class="question-link">Suffix Trees</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    Advanced Mathematics (4 subtopics, 28 problems) <span class="arrow">></span>
+                </div>
+                <div class="accordion-content">
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            Advanced Number Theory (4 problems) <span class="arrow">></span>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="question-item" data-id="eulers-totient-function-gfg">
+                                <a href="https://practice.geeksforgeeks.org/problems/euler-totient-function4604/1" target="_blank" class="question-link">Euler's Totient Function</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="eulers-totient-function-cp-algorithms">
+                                <a href="https://cp-algorithms.com/algebra/phi-function.html" target="_blank" class="question-link">Euler's Totient Function</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="chinese-remainder-theorem-cp-algorithms">
+                                <a href="https://cp-algorithms.com/algebra/chinese-remainder-theorem.html" target="_blank" class="question-link">Chinese Remainder Theorem</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="pigeonhole-principle-gfg">
+                                <a href="https://www.geeksforgeeks.org/discrete-mathematics-the-pigeonhole-principle/" target="_blank" class="question-link">Pigeonhole Principle</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            Large Exponentiation (10 problems) <span class="arrow">></span>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="question-item" data-id="big-power-large-a-gfg">
+                                <a href="https://practice.geeksforgeeks.org/problems/find-abm3912/1" target="_blank" class="question-link">Big Power - Large A</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="big-power-large-a-gfg-2">
+                                <a href="https://www.geeksforgeeks.org/find-abm-large/" target="_blank" class="question-link">Big Power - Large A</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="big-power-large-b-gfg">
+                                <a href="https://www.geeksforgeeks.org/find-abm-where-b-is-very-large/" target="_blank" class="question-link">Big Power - Large B</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="super-power-leetcode">
+                                <a href="https://leetcode.com/problems/super-pow/" target="_blank" class="question-link">Super Power</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="power-of-power">
+                                <a href="https://www.geeksforgeeks.org/find-power-power-mod-prime/" target="_blank" class="question-link">Power of Power</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="power-big-integers">
+                                <a href="https://www.geeksforgeeks.org/writing-power-function-for-large-numbers/" target="_blank" class="question-link">Power - Big Integers</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="modular-factorial-cn">
+                                <a href="https://www.codingninjas.com/codestudio/problems/boring-factorials_1474978" target="_blank" class="question-link">Modular Factorial</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="wilsons-theorem-cp-algorithms">
+                                <a href="https://cp-algorithms.com/algebra/factorial-modulo.html" target="_blank" class="question-link">Wilson's Theorem</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="factorials-again">
+                                <a href="https://www.codingninjas.com/codestudio/problems/factorial-again_1756177?leftPanelTab=0" target="_blank" class="question-link">Factorials Again</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="product-of-factorials">
+                                <a href="https://www.spoj.com/problems/FACTMUL/" target="_blank" class="question-link">Product of Factorials</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            Fibonacci Numbers (11 problems) <span class="arrow">></span>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="question-item" data-id="fibonacci-numbers-cp-algorithms">
+                                <a href="https://cp-algorithms.com/algebra/fibonacci-numbers.html" target="_blank" class="question-link">Fibonacci Numbers</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="linear-recurrence-relation">
+                                <a href="https://www.hackerearth.com/practice/notes/solving-linear-recurrence-relation/" target="_blank" class="question-link">Linear Recurrence Relation</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="facts-about-fibonacci">
+                                <a href="https://www.geeksforgeeks.org/interesting-facts-fibonacci-numbers/" target="_blank" class="question-link">Facts About Fibonacci</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="matrix-exponentiation-gfg">
+                                <a href="https://www.geeksforgeeks.org/matrix-exponentiation/" target="_blank" class="question-link">Matrix Exponentiation</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="generalized-fibonacci">
+                                <a href="https://practice.geeksforgeeks.org/problems/generalised-fibonacci-numbers1820/1" target="_blank" class="question-link">Generalized Fibonacci</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="modified-fibonacci">
+                                <a href="https://practice.geeksforgeeks.org/problems/modified-fibonacci4449/1" target="_blank" class="question-link">Modified Fibonacci</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="cassini-identity">
+                                <a href="https://practice.geeksforgeeks.org/problems/fibonacci-expression3939/1" target="_blank" class="question-link">Cassini Identity</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="check-fibonacci">
+                                <a href="https://practice.geeksforgeeks.org/problems/check-if-the-number-is-fibonacci4654/1" target="_blank" class="question-link">Check Fibonacci</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="gcd-fibonacci">
+                                <a href="https://practice.geeksforgeeks.org/problems/gcd-and-fibonacci-numbers4351/1" target="_blank" class="question-link">GCD & Fibonacci</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="nth-even-fibonacci">
+                                <a href="https://practice.geeksforgeeks.org/problems/nth-even-fibonacci-number1119/1" target="_blank" class="question-link">Nth Even Fibonacci</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="fibonacci-sum">
+                                <a href="https://practice.geeksforgeeks.org/problems/fibonacci-sum1423/1" target="_blank" class="question-link">Fibonacci Sum</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            Probability Problems (6 problems) <span class="arrow">></span>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="question-item" data-id="birthday-paradox">
+                                <a href="https://www.geeksforgeeks.org/birthday-paradox/" target="_blank" class="question-link">Birthday Paradox</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="probability-theory">
+                                <a href="https://www.codingninjas.com/codestudio/library/probability" target="_blank" class="question-link">Probability Theory</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="mathematical-expectation-codechef">
+                                <a href="https://www.codechef.com/wiki/tutorial-expectation" target="_blank" class="question-link">Mathematical Expectation</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="coupon-collector-problem">
+                                <a href="https://www.spoj.com/problems/FAVDICE/" target="_blank" class="question-link">Coupon Collector Problem</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="dice-probability">
+                                <a href="https://cses.fi/problemset/task/1725" target="_blank" class="question-link">Dice Probability</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="candy-lottery">
+                                <a href="https://cses.fi/problemset/task/1727" target="_blank" class="question-link">Candy Lottery</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            Game Theory (10 problems) <span class="arrow">></span>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="question-item" data-id="sprague-grundy-theorem">
+                                <a href="https://cp-algorithms.com/game_theory/sprague-grundy-nim.html" target="_blank" class="question-link">Sprage Grundy Theorem</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="finders-keeper">
+                                <a href="https://www.spoj.com/problems/NGM/" target="_blank" class="question-link">Finders Keeper</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="game-of-nim">
+                                <a href="https://www.spoj.com/problems/MMMGAME/" target="_blank" class="question-link">Game of Nim</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="qcj3-game">
+                                <a href="https://www.spoj.com/problems/QCJ3/" target="_blank" class="question-link">QCJ3 Game</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="stone-game-vi">
+                                <a href="https://leetcode.com/problems/stone-game-vi/" target="_blank" class="question-link">Stone Game - VI</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="maximum-coins">
+                                <a href="https://leetcode.com/problems/maximum-number-of-coins-you-can-get/" target="_blank" class="question-link">Maximum Coins</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="sum-game">
+                                <a href="https://leetcode.com/problems/sum-game/" target="_blank" class="question-link">Sum Game</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="remove-same-colors">
+                                <a href="https://leetcode.com/problems/remove-colored-pieces-if-both-neighbors-are-the-same-color/" target="_blank" class="question-link">Remove Same Colors</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="cses-stick-game">
+                                <a href="https://cses.fi/problemset/task/1729" target="_blank" class="question-link">CSES - Stick Game</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="cses-nim-game-i">
+                                <a href="https://cses.fi/problemset/task/1730" target="_blank" class="question-link">CSES - Nim Game I</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="cses-nim-game-ii">
+                                <a href="https://cses.fi/problemset/task/1098" target="_blank" class="question-link">CSES - Nim Game II</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="cses-stair-game">
+                                <a href="https://cses.fi/problemset/task/1099" target="_blank" class="question-link">CSES - Stair Game</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="cses-grundys-game">
+                                <a href="https://cses.fi/problemset/task/2207" target="_blank" class="question-link">CSES - Grundy's Game</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="cses-another-game">
+                                <a href="https://cses.fi/problemset/task/2208" target="_blank" class="question-link">CSES - Another Game</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    Advanced Searching (6 problems) <span class="arrow">></span>
+                </div>
+                <div class="accordion-content">
+                    <div class="question-item" data-id="jump-search">
+                        <a href="https://www.geeksforgeeks.org/jump-search/" target="_blank" class="question-link">Jump Search</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="step-array-search">
+                        <a href="https://practice.geeksforgeeks.org/problems/searching-in-an-array-where-adjacent-differ-by-at-most-k/0" target="_blank" class="question-link">Step Array Search</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="exponential-search">
+                        <a href="https://www.geeksforgeeks.org/exponential-search/" target="_blank" class="question-link">Exponential Search</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="unbounded-binary-search">
+                        <a href="https://www.geeksforgeeks.org/find-the-point-where-a-function-becomes-negative/" target="_blank" class="question-link">Unbounded Binary Search</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="searching-in-infinite-sorted">
+                        <a href="https://www.geeksforgeeks.org/find-position-element-sorted-array-infinite-numbers/" target="_blank" class="question-link">Searching in Infinite Sorted</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="interpolation-search">
+                        <a href="https://www.geeksforgeeks.org/interpolation-search/" target="_blank" class="question-link">Interpolation Search</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="ternary-search-gfg">
+                        <a href="https://www.geeksforgeeks.org/ternary-search/" target="_blank" class="question-link">Ternary Search</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    Advanced Linked Lists (4 subtopics, 10 problems) <span class="arrow">></span>
+                </div>
+                <div class="accordion-content">
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            XOR List (3 problems) <span class="arrow">></span>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="question-item" data-id="xor-list-gfg">
+                                <a href="https://practice.geeksforgeeks.org/problems/xor-linked-list/1" target="_blank" class="question-link">XOR List</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="xor-list-i-gfg">
+                                <a href="https://www.geeksforgeeks.org/xor-linked-list-a-memory-efficient-doubly-linked-list-set-1/" target="_blank" class="question-link">XOR List - I</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="xor-list-ii-gfg">
+                                <a href="https://www.geeksforgeeks.org/xor-linked-list-a-memory-efficient-doubly-linked-list-set-2/" target="_blank" class="question-link">XOR List - II</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            Skip List (4 problems) <span class="arrow">></span>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="question-item" data-id="design-skip-list">
+                                <a href="https://leetcode.com/problems/design-skiplist/" target="_blank" class="question-link">Design Skip List</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="skip-list-introduction">
+                                <a href="https://www.geeksforgeeks.org/skip-list/" target="_blank" class="question-link">Introduction</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="skip-list-insertion">
+                                <a href="https://www.geeksforgeeks.org/skip-list-set-2-insertion/" target="_blank" class="question-link">Insertion</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="skip-list-search-deletion">
+                                <a href="https://www.geeksforgeeks.org/skip-list-set-3-searching-deletion/" target="_blank" class="question-link">Search & Deletion</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            Self Organizing List (4 problems) <span class="arrow">></span>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="question-item" data-id="self-organizing-list-introduction">
+                                <a href="https://www.geeksforgeeks.org/self-organizing-list-set-1-introduction/" target="_blank" class="question-link">Introduction</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="self-organizing-list-move-to-front">
+                                <a href="https://www.geeksforgeeks.org/self-organizing-list-move-front-method/?ref=rp" target="_blank" class="question-link">1. Move to Front Method</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="self-organizing-list-count-method">
+                                <a href="https://www.geeksforgeeks.org/self-organizing-list-count-method/" target="_blank" class="question-link">2. Count Method</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="self-organizing-list-transpose-method">
+                                <a href="https://www.geeksforgeeks.org/self-organizing-list-transpose-method/" target="_blank" class="question-link">3. Tranpose Method</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            Unrolled Linked List (3 problems) <span class="arrow">></span>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="question-item" data-id="unrolled-linked-list-introduction">
+                                <a href="https://www.geeksforgeeks.org/unrolled-linked-list-set-1-introduction/" target="_blank" class="question-link">Introduction</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="unrolled-linked-list-insertion-gfg">
+                                <a href="https://www.geeksforgeeks.org/insertion-unrolled-linked-list/" target="_blank" class="question-link">Insertion</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="unrolled-linked-list-insertion-youtube">
+                                <a href="https://www.youtube.com/watch?v=PVieySxgEik" target="_blank" class="question-link">Insertion</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    Advanced Trees (4 subtopics, 15 problems) <span class="arrow">></span>
+                </div>
+                <div class="accordion-content">
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            AVL Tree (3 problems) <span class="arrow">></span>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="question-item" data-id="avl-tree-theory">
+                                <a href="https://www.programiz.com/dsa/avl-tree" target="_blank" class="question-link">AVL Tree Theory</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="avl-tree-insertion">
+                                <a href="https://practice.geeksforgeeks.org/problems/avl-tree-insertion/1" target="_blank" class="question-link">AVL Tree Insertion</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="avl-tree-deletion">
+                                <a href="https://practice.geeksforgeeks.org/problems/avl-tree-deletion/1" target="_blank" class="question-link">AVL Tree Deletion</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            B & B+ Tree (6 problems) <span class="arrow">></span>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="question-item" data-id="b-tree-theory">
+                                <a href="https://www.programiz.com/dsa/b-tree" target="_blank" class="question-link">B Tree Theory</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="b-tree-insertion">
+                                <a href="https://www.programiz.com/dsa/insertion-into-a-b-tree" target="_blank" class="question-link">B Tree Insertion</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="b-tree-deletion">
+                                <a href="https://www.programiz.com/dsa/deletion-from-a-b-tree" target="_blank" class="question-link">B Tree Deletion</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="b-plus-tree-theory">
+                                <a href="https://www.programiz.com/dsa/b-plus-tree" target="_blank" class="question-link">B+ Tree Theory</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="b-plus-tree-insertion">
+                                <a href="https://www.programiz.com/dsa/insertion-on-a-b-plus-tree" target="_blank" class="question-link">B+ Tree Insertion</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="b-plus-tree-deletion">
+                                <a href="https://www.programiz.com/dsa/deletion-from-a-b-plus-tree" target="_blank" class="question-link">B+ Tree Deletion</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            M Way Tree (4 problems) <span class="arrow">></span>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="question-item" data-id="2-3-trees-gfg">
+                                <a href="https://www.geeksforgeeks.org/2-3-trees-search-and-insert/" target="_blank" class="question-link">2-3 Trees</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="2-3-4-trees-gfg">
+                                <a href="https://www.geeksforgeeks.org/2-3-4-tree/" target="_blank" class="question-link">2-3-4 Trees</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="m-way-tree-i">
+                                <a href="https://www.geeksforgeeks.org/m-way-search-trees-set-1-searching/" target="_blank" class="question-link">M Way Tree - I</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="m-way-tree-ii">
+                                <a href="https://www.geeksforgeeks.org/m-way-search-tree-set-2-insertion-and-deletion/" target="_blank" class="question-link">M Way Tree - II</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            Red Black Trees (4 problems) <span class="arrow">></span>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="question-item" data-id="rb-tree-theory">
+                                <a href="https://www.programiz.com/dsa/red-black-tree" target="_blank" class="question-link">RB Tree Theory</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="rb-tree-insertion">
+                                <a href="https://www.programiz.com/dsa/insertion-in-a-red-black-tree" target="_blank" class="question-link">RB Tree Insertion</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="rb-tree-deletion">
+                                <a href="https://www.programiz.com/dsa/deletion-from-a-red-black-tree" target="_blank" class="question-link">RB Tree Deletion</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="augmented-ds-drive">
+                                <a href="https://drive.google.com/file/d/1YZk9V2siZOYvvPnyIcK2O4ZND7JBlA5s/view" target="_blank" class="question-link">Augmented DS</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="interval-trees">
+                                <a href="https://www.geeksforgeeks.org/interval-tree/" target="_blank" class="question-link">Interval Trees</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    Range Query (4 subtopics, 17 problems) <span class="arrow">></span>
+                </div>
+                <div class="accordion-content">
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            Range Query Theory (8 problems) <span class="arrow">></span>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="question-item" data-id="segment-tree-theory-cp">
+                                <a href="https://cp-algorithms.com/data_structures/segment_tree.html" target="_blank" class="question-link">Segment Tree Theory</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="segment-tree-theory-scaler">
+                                <a href="https://www.scaler.com/topics/data-structures/segment-trees-in-data-structure/" target="_blank" class="question-link">Segment Tree Theory</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="lazy-propogation">
+                                <a href="https://www.scaler.com/topics/data-structures/segment-tree-with-lazy-propagation/" target="_blank" class="question-link">Lazy Propogation</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="persistent-segment-tree">
+                                <a href="https://www.scaler.com/topics/data-structures/persistent-segment-tree/" target="_blank" class="question-link">Persistent Segment Tree</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="fenwick-tree-theory-cp">
+                                <a href="https://cp-algorithms.com/data_structures/fenwick.html" target="_blank" class="question-link">Fenwick Tree Theory</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="fenwick-tree-theory-scaler">
+                                <a href="https://www.scaler.com/topics/data-structures/fenwick-tree/" target="_blank" class="question-link">Fenwick Tree Theory</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="square-root-decomposition-cp">
+                                <a href="https://cp-algorithms.com/data_structures/sqrt_decomposition.html" target="_blank" class="question-link">Square Root Decomposition</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="square-root-decomposition-scaler">
+                                <a href="https://www.scaler.com/topics/data-structures/mos-algorithm/" target="_blank" class="question-link">Square Root Decomposition</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            Range Sum Query (4 problems) <span class="arrow">></span>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="question-item" data-id="range-sum-query-1d-cses">
+                                <a href="https://cses.fi/problemset/task/1646" target="_blank" class="question-link">Range Sum Query - 1D</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="range-sum-query-2d-cses">
+                                <a href="https://cses.fi/problemset/task/1652" target="_blank" class="question-link">Range Sum Query - 2D</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="rsq-point-update-1d">
+                                <a href="https://leetcode.com/problems/range-sum-query-mutable/" target="_blank" class="question-link">RSQ - Point Update 1D</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="rsq-point-update-2d">
+                                <a href="https://www.lintcode.com/problem/817/" target="_blank" class="question-link">RSQ - Point Update 2D</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="rsq-range-updates">
+                                <a href="https://www.codingninjas.com/codestudio/problems/arithmetic-progression-queries_696448" target="_blank" class="question-link">RSQ - Range pdates</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="count-even-in-range">
+                                <a href="https://www.codingninjas.com/codestudio/problems/hard_5841302" target="_blank" class="question-link">Count Even in Range</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="squares-sum-range-query">
+                                <a href="https://www.codingninjas.com/codestudio/problems/squares-sum_1473861" target="_blank" class="question-link">Squares Sum Range Query</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            Range Minimum Query (3 problems) <span class="arrow">></span>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="question-item" data-id="range-minimum-query-cn">
+                                <a href="https://www.codingninjas.com/codestudio/problems/fastest-horse_1467107" target="_blank" class="question-link">Range Minimum Query</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="rmq-point-updates">
+                                <a href="https://cses.fi/problemset/task/1649" target="_blank" class="question-link">RMQ - Point Updates</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="rmq-range-updates">
+                                <a href="https://www.hackerearth.com/problem/algorithm/range-update-range-max-queries/" target="_blank" class="question-link">RMQ - Range Updates</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            Subarray Sum Queries (4 problems) <span class="arrow">></span>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="question-item" data-id="max-subarray-sum-queries">
+                                <a href="https://cses.fi/problemset/task/1190" target="_blank" class="question-link">Max Subarray Sum Queries</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="max-subarray-sum-range-i">
+                                <a href="https://www.codingninjas.com/codestudio/problems/max_subarray_sum_1469227?leftPanelTab=0" target="_blank" class="question-link">Max Subarray Sum Range - I</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="max-subarray-sum-range-ii">
+                                <a href="https://www.spoj.com/problems/GSS3/" target="_blank" class="question-link">Max Subarray Sum Range - II</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                            <div class="question-item" data-id="max-pair-sum-range-queries">
+                                <a href="https://www.codingninjas.com/codestudio/problems/maximum-sum_1467395" target="_blank" class="question-link">Max Pair Sum Range Queries</a>
+                                <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                                <button class="notes-toggle">Notes</button>
+                                <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    Advanced Geometry (3 problems) <span class="arrow">></span>
+                </div>
+                <div class="accordion-content">
+                    <div class="question-item" data-id="computational-geometry">
+                        <a href="https://www.hackerearth.com/practice/notes/computational-geometry-i-1/" target="_blank" class="question-link">Computational Geometry</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="line-sweep-technique">
+                        <a href="https://www.hackerearth.com/practice/math/geometry/line-sweep-technique/tutorial/" target="_blank" class="question-link">Line Sweep Technique</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="convex-polygon">
+                        <a href="https://www.codingninjas.com/codestudio/problems/convex-polygon_1466936" target="_blank" class="question-link">Convex Polygon</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="convex-hull-gfg">
+                        <a href="https://practice.geeksforgeeks.org/problems/convex-hull2138/1" target="_blank" class="question-link">Convex Hull</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="erect-the-fence">
+                        <a href="https://leetcode.com/problems/erect-the-fence/" target="_blank" class="question-link">Erect the Fence</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="jarvis-algorithm">
+                        <a href="https://www.geeksforgeeks.org/convex-hull-set-1-jarviss-algorithm-or-wrapping/" target="_blank" class="question-link">Jarvis Algorithm</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="graham-scan-algorithm-cp">
+                        <a href="https://cp-algorithms.com/geometry/convex-hull.html" target="_blank" class="question-link">Graham Scan Algorithm</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    Digit Dynamic Programming (10 problems) <span class="arrow">></span>
+                </div>
+                <div class="accordion-content">
+                    <div class="question-item" data-id="digit-dp-theory-scaler">
+                        <a href="https://www.scaler.com/topics/data-structures/digit-dp/" target="_blank" class="question-link">Digit Dynamic Programming</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="digit-dp-introduction">
+                        <a href="https://www.geeksforgeeks.org/digit-dp-introduction/" target="_blank" class="question-link">Digit Dynamic Programming</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="nos-in-range-with-sum-digits">
+                        <a href="https://www.geeksforgeeks.org/count-of-numbers-from-range-l-r-whose-sum-of-digits-is-y-set-2/" target="_blank" class="question-link">Nos in Range with Sum Digits</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="count-numbers-from-given-set">
+                        <a href="https://leetcode.com/problems/numbers-at-most-n-given-digit-set/" target="_blank" class="question-link">Count Numbers from Given Set</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="digit-sum-in-numbers">
+                        <a href="https://www.spoj.com/problems/PR003004/" target="_blank" class="question-link">Digit Sum in Numbers</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="count-1s-in-nos-le-n">
+                        <a href="https://leetcode.com/problems/number-of-digit-one/" target="_blank" class="question-link">Count 1s in Nos <= N</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="digit-count-in-range">
+                        <a href="https://www.codingninjas.com/codestudio/problems/digit-count-in-range_1234691" target="_blank" class="question-link">Digit Count in Range</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="nos-with-no-equal-digits-gfg">
+                        <a href="https://www.geeksforgeeks.org/count-of-n-digit-numbers-having-no-pair-of-equal-consecutive-digits/" target="_blank" class="question-link">Nos with No Equal Digits</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="nos-without-consecutive-1s">
+                        <a href="https://leetcode.com/problems/non-negative-integers-without-consecutive-ones/" target="_blank" class="question-link">Nos without Consecutive 1s</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="nos-with-repeated-digits">
+                        <a href="https://leetcode.com/problems/numbers-with-repeated-digits/" target="_blank" class="question-link">Nos with Repeated Digits</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="n-digit-stepping-nos">
+                        <a href="https://www.geeksforgeeks.org/number-n-digit-stepping-numbers/" target="_blank" class="question-link">N Digit Stepping Nos</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    DP With Bitmasking (8 problems) <span class="arrow">></span>
+                </div>
+                <div class="accordion-content">
+                    <div class="question-item" data-id="dp-with-bitmasking-tutorial-hacker-earth">
+                        <a href="https://www.hackerearth.com/practice/algorithms/dynamic-programming/bit-masking/tutorial/" target="_blank" class="question-link">DP with Bitmasking</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="dp-with-bitmasking-gfg">
+                        <a href="https://www.geeksforgeeks.org/bitmasking-and-dynamic-programming-set-1-count-ways-to-assign-unique-cap-to-every-person/" target="_blank" class="question-link">DP with Bitmasking</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="travelling-salesman-problem">
+                        <a href="https://practice.geeksforgeeks.org/problems/travelling-salesman-problem2732/1" target="_blank" class="question-link">Travelling Salesman Problem</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="tsp-backtracking">
+                        <a href="https://www.geeksforgeeks.org/travelling-salesman-problem-implementation-using-backtracking/?ref=rp" target="_blank" class="question-link">TSP - Backtracking</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="tsp-dynamic-programming-i">
+                        <a href="https://www.geeksforgeeks.org/travelling-salesman-problem-set-1/" target="_blank" class="question-link">TSP - Dynamic Programming - I</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="tsp-dynamic-programming-ii">
+                        <a href="https://www.geeksforgeeks.org/bitmasking-dynamic-programming-set-2-tsp/" target="_blank" class="question-link">TSP - Dynamic Programming - II</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="smallest-sufficient-team-leetcode">
+                        <a href="https://leetcode.com/problems/smallest-sufficient-team/" target="_blank" class="question-link">Smallest Sufficient Team</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="ways-to-wear-diff-hats">
+                        <a href="https://leetcode.com/problems/number-of-ways-to-wear-different-hats-to-each-other/" target="_blank" class="question-link">Ways to wear Diff Hats</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="max-students-in-exam">
+                        <a href="https://leetcode.com/problems/maximum-students-taking-exam/" target="_blank" class="question-link">Max Students in Exam</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="shortest-superstring">
+                        <a href="https://leetcode.com/problems/find-the-shortest-superstring/" target="_blank" class="question-link">Shortest Superstring</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    Meet in the Middle (5 problems) <span class="arrow">></span>
+                </div>
+                <div class="accordion-content">
+                    <div class="question-item" data-id="meet-in-the-middle-codeforces">
+                        <a href="https://codeforces.com/blog/entry/95571" target="_blank" class="question-link">Meet in the Middle</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="meet-in-the-middle-gfg">
+                        <a href="https://www.geeksforgeeks.org/meet-in-the-middle/" target="_blank" class="question-link">Meet in the Middle</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="target-sum-subset-cses">
+                        <a href="https://cses.fi/problemset/task/1628" target="_blank" class="question-link">Target Sum Subset</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="sum-of-four-values-cses">
+                        <a href="https://cses.fi/problemset/task/1642" target="_blank" class="question-link">Sum of Four Values</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="subset-sum-in-range-spoj">
+                        <a href="https://www.spoj.com/problems/SUBSUMS/" target="_blank" class="question-link">Subset Sum in Range</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    Network Flow Algorithm (6 problems) <span class="arrow">></span>
+                </div>
+                <div class="accordion-content">
+                    <div class="question-item" data-id="max-flow-problem-gfg">
+                        <a href="https://practice.geeksforgeeks.org/problems/find-the-maximum-flow/0" target="_blank" class="question-link">Max Flow Problem</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="ford-fulkerson-algo">
+                        <a href="https://www.geeksforgeeks.org/ford-fulkerson-algorithm-for-maximum-flow-problem/" target="_blank" class="question-link">Ford Fulkerson Algo</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="dinics-algorithm">
+                        <a href="https://www.geeksforgeeks.org/dinics-algorithm-maximum-flow/" target="_blank" class="question-link">Dinic's Algorithm</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="minimum-cut-gfg">
+                        <a href="https://practice.geeksforgeeks.org/problems/find-minimum-s-t-cut-in-a-flow-network/0" target="_blank" class="question-link">Minimum Cut </a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="max-bipartite-matching-gfg">
+                        <a href="https://practice.geeksforgeeks.org/problems/maximum-bipartite-matching/1" target="_blank" class="question-link">Max Bipartite Matching</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                    <div class="question-item" data-id="max-bipartite-matching-gfg-2">
+                        <a href="https://www.geeksforgeeks.org/maximum-bipartite-matching/" target="_blank" class="question-link">Max Bipartite Matching</a>
+                        <select class="status-dropdown"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="solved">Solved</option><option value="review">Review</option></select>
+                        <button class="notes-toggle">Notes</button>
+                        <div class="notes-container"><textarea placeholder="My notes on this problem..."></textarea></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="../script.js"></script>
+</body>
+</html>
