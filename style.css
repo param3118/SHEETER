@@ -1,0 +1,233 @@
+/* General styling */
+:root {
+    --bg-color: #f7f9fc;
+    --card-bg-color: #ffffff;
+    --primary-color: #4a90e2;
+    --text-color: #333;
+    --light-text-color: #666;
+    --border-color: #e0e6ed;
+    --solved-color: #d4edda;
+    --review-color: #fff3cd;
+    --in-progress-color: #c7d2fe;
+    --not-started-color: #f8f9fa;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+/* Homepage grid layout */
+.topic-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.topic-card {
+    background-color: var(--card-bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--text-color);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.topic-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.topic-card h3 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+/* Question pages styles */
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.search-filter-group {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.search-filter-group input,
+.search-filter-group select {
+    padding: 8px 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.action-button {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.action-button:hover {
+    background-color: #3870b2;
+}
+
+.topic-details h1 {
+    margin-bottom: 10px;
+}
+
+.back-button {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 500;
+    margin-right: 20px;
+}
+
+.accordion-item {
+    background-color: var(--card-bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: var(--text-color);
+    transition: background-color 0.2s;
+}
+
+.accordion-header:hover {
+    background-color: #f0f2f5;
+}
+
+.accordion-header .arrow {
+    font-size: 1.2rem;
+    transition: transform 0.3s;
+}
+
+.accordion-header.active .arrow {
+    transform: rotate(90deg);
+}
+
+.accordion-content {
+    display: none;
+    padding: 15px;
+    border-top: 1px solid var(--border-color);
+}
+
+.question-item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+    border-bottom: 1px dashed #ddd;
+}
+
+.question-item:last-child {
+    border-bottom: none;
+}
+
+.question-link {
+    text-decoration: none;
+    color: var(--text-color);
+    flex-grow: 1;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.question-link:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.status-dropdown,
+.notes-toggle {
+    padding: 5px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid var(--border-color);
+    font-family: inherit;
+}
+
+.status-solved { background-color: var(--solved-color); }
+.status-review { background-color: var(--review-color); }
+.status-in-progress { background-color: var(--in-progress-color); }
+.status-not-started { background-color: var(--not-started-color); }
+
+.notes-container {
+    width: 100%;
+    margin-top: 10px;
+    display: none;
+}
+
+.notes-container textarea {
+    width: 100%;
+    min-height: 100px;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+    font-family: inherit;
+    font-size: 0.9rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .toolbar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .search-filter-group {
+        flex-direction: column;
+    }
+    .back-button {
+        display: block;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+}
